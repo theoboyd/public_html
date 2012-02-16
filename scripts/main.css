@@ -110,6 +110,19 @@ a.gold:hover {
    border-radius: 4px;
 }
 
+input[type=submit] {
+   font-size: 90%;
+   font-weight: bold;
+   border: none;
+   height: 22px;
+}
+
+input[type=file] {
+   font-size: 90%;
+   border: none;
+   height: 19px;
+}
+
 .link {
    background: #6688ff;
 }
@@ -131,7 +144,7 @@ a.gold:hover {
    -moz-border-radius: 4px;
    -webkit-border-radius: 4px;
    border-radius: 4px;
-   border: 1px solid #000000;
+   border: 1px solid #000000 !important;
 }
 
 .whitespace {
@@ -301,26 +314,4 @@ img.barcode {
 .iframe {
    border: none;
    width: 100%;
-}
-
-/* File upload styles begin */
-.SI-FILES-STYLIZED label.cabinet
-{
-    width: 27px;
-    height: 22px;
-    background: url(folder.open.gif) 0 0 no-repeat;
-
-    display: block;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.SI-FILES-STYLIZED label.cabinet input.file
-{
-    position: relative;
-    height: 100%;
-    width: auto;
-    opacity: 0;
-    -moz-opacity: 0;
-    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=0);
 }

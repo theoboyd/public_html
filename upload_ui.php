@@ -12,27 +12,23 @@
       <script type="text/javascript" src="scripts/tabs.js"></script>
       <script type="text/javascript" src="scripts/jquery.js"></script>
       <script type="text/javascript" src="scripts/browser.js"></script>
-      <script type="text/javascript" src="scripts/si.files.js"></script>
    </head>
-   <body onload="SI.Files.stylizeAll();">
+   <body>
       <div id="wrap">
          <div id="main">
          <!-- -->
             <div style="float: left;">
             <header class="body">
-               <h2><img class="thumb" src="images/theo.jpg" alt="" /> Theodore Boyd</h2>
+               <h2><img class="thumb" src="images/mvspt.png" alt="" /> MVSPT</h2>
             </header>
             <section id="content" class="body">
             <!-- Section: Upload -->
                <h3>Upload A File</h3>
                <p></p>
                <form action="upload_script.php" method="post" enctype="multipart/form-data">
-                  <label class="cabinet">
-                      <input type="file" name="file" id="file" class="file" />
-                  </label>
-
-                  <br />
-                  <input type="submit" name="submit" value="Submit" />
+                  <label for="file">Select a file: </label>
+                  <input class="info" type="file" name="file" id="file" class="file" />
+                  <input class="link" type="submit" name="submit" value="Submit" />
 
               </form>
               <p><a class="link" href="index.html">Return</a> to the main site</p>

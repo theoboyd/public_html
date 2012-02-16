@@ -19,7 +19,7 @@
          <!-- -->
             <div style="float: left;">
             <header class="body">
-               <h2><img class="thumb" src="images/theo.jpg" alt="" /> Theodore Boyd</h2>
+               <h2><img class="thumb" src="images/mvspt.png" alt="" /> MVSPT</h2>
             </header>
             <section id="content" class="body">
             <!-- Section: Upload -->
@@ -30,18 +30,18 @@
                   || ($_FILES["file"]["type"] == "text/x-c")
                   || ($_FILES["file"]["type"] == "text/x-java-source")
                   || ($_FILES["file"]["type"] == "application/pdf"))
-                  && ($_FILES["file"]["size"] < 20000))
+                  && ($_FILES["file"]["size"] < 2097152))
                     {
                     if ($_FILES["file"]["error"] > 0)
                       {
-                      echo "Return Code: " . $_FILES["file"]["error"] . "<br />";
+                      echo "Return code: " . $_FILES["file"]["error"] . "<br />";
                       }
                     else
                       {
-                      echo "Upload: " . $_FILES["file"]["name"] . "<br />";
+                      //echo "Upload: " . $_FILES["file"]["name"] . "<br />";
                       echo "Type: " . $_FILES["file"]["type"] . "<br />";
                       echo "Size: " . ($_FILES["file"]["size"] / 1024) . " Kb<br />";
-                      echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br />";
+                      //echo "Temp file: " . $_FILES["file"]["tmp_name"] . "<br />";
 
                       if (file_exists("uploads/" . $_FILES["file"]["name"]))
                         {
@@ -51,15 +51,16 @@
                         {
                         move_uploaded_file($_FILES["file"]["tmp_name"],
                         "uploads/" . $_FILES["file"]["name"]);
-                        echo "Stored in: " . "uploads/" . $_FILES["file"]["name"];
+                        echo "Uploaded as: " . $_FILES["file"]["name"];
                         }
                       }
                     }
                   else
                     {
-                    echo "Invalid file";
+                    echo "Invalid filetype or size.<br />Please upload a plain text file, Java/C/C++ source file or a PDF that is less than 2MB. ";
                     }
                ?>
+               <p><a class="link" href="upload_ui.php">Upload (Another) File</a></p>
                <p><a class="link" href="index.html">Return</a> to the main site</p>
             </section>
          </div>
