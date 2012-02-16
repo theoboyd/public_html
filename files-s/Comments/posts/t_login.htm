@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Theodore Boyd's DoC Pages</title>
+        <!-- (C) 2008/9 Theodore Boyd, unless another author has been
+        credited in the comments. -->
+     </head>
+     <body>
+
+<form method="POST" action="in(cgiurl)" name="form1" onSubmit="return SetPass();">
+
+<input type="hidden" name="command" value="manage">
+<p><img border="0" src="in(imageurl)/lock.png" width="30" height="40"><b>Login</b></p>
+<p>Username: 
+<input type="text" name="UserName" size="10"></p>
+
+<p>Password: 
+<input type="password" name="PassWord" size="10"></p>
+
+<p><input type="submit" value="Login" name="B1"></p>
+
+</form>
+</body>
+<script language="javascript">
+document.form1.UserName.focus();
+function SetPass(){
+var UserName = document.form1.UserName.value;
+var PassWord = document.form1.PassWord.value;
+if(!UserName){
+alert("Error. Please enter a username");
+return false;
+}
+if(!PassWord){
+alert("Error. Please enter a password");
+return false;
+}
+document.cookie = "UserName="+UserName;
+document.cookie = "PassWord="+PassWord;
+return true;
+}
+</script>
+</html>

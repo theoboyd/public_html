@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Theodore Boyd's DoC Pages</title>
+        <!-- (C) 2008/9 Theodore Boyd, unless another author has been
+        credited in the comments. -->
+     </head>
+     <body>
+
+<form action="in(cgiurl)" method="POST" name="form1">
+<input type="hidden" name="command" value="">
+<input type="hidden" name="gid" value="in(gid)">
+
+<p><b>Management</b></p>
+<input onMouseOver="className='buttonOver';" onMouseOut="className='button';" type="button" value="Links Wizard" onClick="ShowLinks();">
+<input onMouseOver="className='buttonOver';" onMouseOut="className='button';" type="button" value="Preview" onClick="Preview();">
+<input onMouseOver="className='buttonOver';" onMouseOut="className='button';" type="button" value="Log Out" onClick="window.location='in(cgiurl)?command=login';">
+
+<p>Select the posts you would like to delete then click the Delete Selected Posts link.</p>
+
+<table border="1" width="100%" bordercolor="#000000" cellspacing="0" cellpadding="3">
+  <tr>
+    <td valign="middle" align="left" colspan="2">
+    <a href="javascript:Delete();"><b>Delete Selected Posts</b></a></td>
+  </tr>
+  in(line)
+  <tr>
+    <td valign="middle" align="left" colspan="2">
+    <a href="javascript:Delete();"><b>Delete Selected Posts</b></a></td>
+  </tr>
+</table>
+
+</form>
+</body>
+<script language="javascript">
+var cgiurl = "in(cgiurl)";
+
+function Delete(){
+var rndURL = (1000*Math.random());
+if(confirm("Are you sure you want to remove these entries?")){
+	document.form1.command.value='delete';
+	document.form1.submit();
+	}
+}
+
+function Preview(){
+   var rndURL = (1000*Math.random());
+	var NewURL = cgiurl + "?command=view&rnd="+rndURL;
+   window.open(NewURL);
+}
+
+function ShowLinks(){
+   var rndURL = (1000*Math.random());
+	var NewURL = cgiurl + "?command=slw&rnd="+rndURL;
+   window.location = NewURL;
+}
+</script>
+</html>

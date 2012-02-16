@@ -1,0 +1,5 @@
+SSLrequireSSL
+AuthType KerberosV5
+AuthName "DoC (Specific Users)"
+require user tb208
+satisfy all

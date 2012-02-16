@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Theodore Boyd's DoC Pages</title>
+      <meta charset="utf-8">
+      <!-- (C) 2008-2010 Theodore Boyd -->
+      <link rel="stylesheet" type="text/css" href="../scripts/main.css" />
+      <link rel="stylesheet" type="text/css" href="popup.css" />
+      <script type="text/javascript" src="../scripts/tabs.js"></script>
+   </head>
+   <body>
+      <div id="tab1" class="buttonbar" style="display:none;">
+         <div class="tabbar">
+            <a class="button tab default">Website Help</a>
+            <a class="button tab" href="javascript:switchto('tab1', 'tab2')">About HCCBs</a>
+            <a class="button tab" href="javascript:switchto('tab1', 'tab3')">Using HCCBs</a>
+            <a class="button tab" href="javascript:switchto('tab1', 'tab4')">Website Colour Scheme</a>
+         </div>
+         <p><h3>What does this do?</h3></p>
+         <p>You arrived here because you clicked a help link.</p>
+         <p>Choose a topic from the tabs above, or if you need more information, <a href="javascript:toggle('jemail')">email me</a>.<br />
+            <div id="jemail" style="display:none;">
+               <object classid="java:ICWebDetails.class" codebase="../java" type="application/x-java-applet" width="226" height="18">
+                  <param name="code" value="ICWebDetails" />
+                  <param name="java_codebase" value="../java" />
+                  <param name="foreground" value="000000" />
+                  <param name="background" value="dddddd" />
+                  <param name="shadow" value="ffffff" />
+                  <p><span class="error">You don't have Java enabled/installed<a class="error" href="javascript:loadclose('http://www.java.com/getjava')">get Java</a></span></p>
+               </object>
+            </div>
+         </p>
+         <p>
+            <a class="button default" href="javascript:self.close();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+         </p>
+      </div>
+      <div id="tab2" class="buttonbar">
+         <div class="tabbar">
+            <a class="button tab" href="javascript:switchto('tab2', 'tab1')">Website Help</a>
+            <a class="button tab default">About HCCBs</a>
+            <a class="button tab" href="javascript:switchto('tab2', 'tab3')">Using HCCBs</a>
+            <a class="button tab" href="javascript:switchto('tab2', 'tab4')">Website Colour Scheme</a>
+         </div>
+         <p><h3>What is that coloured box?</h3></p>
+         <p>It's a High Capacity Colour Barcode (HCCB) representing this website's URL - and it's readable by many smartphones and also certain specialised scanners and software.</p>
+         <p>To use the one on this site, click the <strong>Using HCCBs</strong> tab above. Or read more below.</p>
+         <p>
+            <a class="button default" href="javascript:self.close();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="button" href="javascript:loadclose('http://en.wikipedia.org/wiki/High_Capacity_Color_Barcode');" target="_blank">&nbsp;Learn More&nbsp;</a>
+         </p>
+      </div>
+      <div id="tab3" class="buttonbar" style="display:none;">
+         <div class="tabbar">
+            <a class="button tab" href="javascript:switchto('tab3', 'tab1')">Website Help</a>
+            <a class="button tab" href="javascript:switchto('tab3', 'tab2')">About HCCBs</a>
+            <a class="button tab default">Using HCCBs</a>
+            <a class="button tab" href="javascript:switchto('tab3', 'tab4')">Website Colour Scheme</a>
+         </div>
+         <p><h3>How do I use the barcode?</h3></p>
+         <p>You'll need a smartphone or other imaging device with <a href="javascript:loadclose('http://gettag.mobi')">the appropriate software</a>.</p>
+         <p>Then just follow the instructions in the application to scan the barcode with your camera. Or read more below.</p>
+         <p>
+            <a class="button default" href="javascript:self.close();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="button" href="javascript:loadclose('http://en.wikipedia.org/wiki/Mobile_tagging');" target="_blank">&nbsp;Learn More&nbsp;</a>
+         </p>
+      </div>
+      <div id="tab4" class="buttonbar" style="display:none;">
+         <div class="tabbar">
+            <a class="button tab" href="javascript:switchto('tab4', 'tab1')">Website Help</a>
+            <a class="button tab" href="javascript:switchto('tab4', 'tab2')">About HCCBs</a>
+            <a class="button tab" href="javascript:switchto('tab4', 'tab3')">Using HCCBs</a>
+            <a class="button tab default">Website Colour Scheme</a>
+         </div>
+         <p><h3>What does the website colour scheme mean?</h3></p>
+         <p>The website uses three colours for links and tags. <a href="javascript:toggle('tagtable')">View the table</a>.<br />
+            <div id="tagtable" style="display:none;">
+               <table>
+                  <tr>
+                     <th>Item</th>
+                     <th>Meaning</th>
+                  </tr>
+                  <tr>
+                     <td><span class="link">Link style tag</span></td>
+                     <td>Not used</td>
+                  </tr>
+                  <tr>
+                     <td><span class="info">Info style tag</span></td>
+                     <td>Timestamp or highlighted text</td>
+                  </tr>
+                  <tr>
+                     <td><span class="error">Error style tag</span></td>
+                     <td>Details about an error that has ocurred</td>
+                  </tr>
+                  <tr>
+                     <td><span class="gold">Gold style tag</span></td>
+                     <td>A promoted or important update</td>
+                  </tr>
+                  <tr>
+                     <td><a class="link">Link style hyperlink</a></td>
+                     <td>A (usually internal) hyperlink</td>
+                  </tr>
+                  <tr>
+                     <td><a class="info">Info style hyperlink</a></td>
+                     <td>A link for more information in the current context</td>
+                  </tr>
+                  <tr>
+                     <td><a class="error">Error style hyperlink</a></td>
+                     <td>A link to correct an error in the current context</td>
+                  </tr>
+                  <tr>
+                     <td><a class="gold">Gold style hyperlink</a></td>
+                     <td>Not used</td>
+                  </tr>
+               </table>
+            </div>
+         </p>
+         <p>
+            <a class="button default" href="javascript:self.close();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+         </p>
+      </div>
+   </body>
+</html>
+
+<!--
+(C) 2008-2010 Theodore Boyd
+
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Theodore Boyd's DoC Pages</title>
+      <meta charset="utf-8">
+      
+      
+      
+      <link rel="stylesheet" type="text/css" href="scripts/main.css" />
+      <script type="text/javascript" src="scripts/tabs.js"></script>
+   </head>
+   <body>
+      <div id="tab1" class="tabframe">
+         <div class="tabbar">
+            <a class="button tab default">About HCCBs</a>
+            <a class="button tab" href="javascript:switchto('tab1', 'tab2')">Using HCCBs</a>
+         </div>
+         <p><h3>What is that coloured box?</h3></p>
+         <p>It's a High Capacity Colour Barcode (HCCB) representing this website's URL - and it's readable by many smartphones and also certain specialised scanners and software.</p>
+         <p>To use the one on this site, click the <strong>Using HCCBs</strong> tab above. Or read more below.</p>
+         <p>
+            <a class="button default" href="javascript:self.close();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="button" href="javascript:loadclose('http://en.wikipedia.org/wiki/High_Capacity_Color_Barcode');" target="_blank">&nbsp;Learn More&nbsp;</a>
+         </p>
+      </div>
+      <div id="tab2" class="tabframe" style="display:none;">
+         <div class="tabbar">
+            <a class="button tab" href="javascript:switchto('tab2', 'tab1')">About HCCBs</a>
+            <a class="button tab default">Using HCCBs</a>
+         </div>
+         <p><h3>How do I use the barcode?</h3></p>
+         <p class="tall">You'll need a smartphone or other imaging device with <a class="info" href="javascript:loadclose('http://gettag.mobi')">the&nbsp;appropriate&nbsp;software</a>.</p>
+         <p>Then just follow the instructions in the application to scan the barcode with your camera. Or read more below.</p>
+         <p>
+            <a class="button default" href="javascript:self.close();">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="button" href="javascript:loadclose('http://en.wikipedia.org/wiki/Mobile_tagging');" target="_blank">&nbsp;Learn More&nbsp;</a>
+         </p>
+      </div>
+   </body>
+</html>
+-->

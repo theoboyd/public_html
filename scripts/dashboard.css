@@ -1,0 +1,87 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background: #000000 url('../images/wallpaper.jpg') no-repeat; /*center top;*/
+    background-size: 100%;
+    text-align: center;
+}
+    
+#dashboard, #popover {
+    position: absolute;
+    overflow: hidden;
+}
+
+#dashboard {
+    bottom: 0px;
+}
+
+#popover {
+    bottom: 130px;
+    height: 60px;
+    width: 500px;
+    border-width: 11px 14px 26px 13px;
+    border-image: url('../images/bubble.png') 11 14 26 13;
+    -moz-border-image: url('../images/bubble.png') 11 14 26 13;
+    -webkit-border-image: url('../images/bubble.png') 11 14 26 13;  
+}
+
+#shelf, #left_shelf, #right_shelf {
+    float:left;
+    height: 150px;
+}
+
+#left_shelf, #right_shelf {
+    width: 30px;
+}
+
+#menu_dashboard {
+	display: inline-block;
+	width: auto;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+
+#menu_dashboard li {
+	width: auto;
+	height: auto;
+	display: inline-block;
+	bottom: 0;
+	vertical-align: bottom;
+}
+
+
+#menu_dashboard li.separator {
+	width: 50px;
+	height: 150px;
+}
+
+#menu_dashboard li a {
+	display: block;
+	height: 100px;
+	width: 100px;
+	position: relative;
+	
+    -webkit-transition-property: width, height;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-property: width, height;
+    -o-transition-duration: 0.5s;
+    -moz-transition-property: width, height;
+    -moz-transition-duration: 0.5s;
+}
+
+#menu_dashboard li a:hover {
+	width: 150px;
+	height: 150px;
+}
+
+#menu_dashboard li a img {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border: none;
+}

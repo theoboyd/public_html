@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Theodore Boyd's DoC Pages</title>
+        <!-- (C) 2008/9 Theodore Boyd, unless another author has been
+        credited in the comments. -->
+     </head>
+     <body>
+     
+<form action="in(cgiurl)" method="POST" name="form1">
+<input type=hidden name=command value="slw">
+<p><b>Links Wizard</b></p>
+
+<table border="1" bgcolor="#FFFFFF">
+<tr>
+ <td width="100%" align=center>
+ <p><b>JavaScript Code</b></p>
+ <input type="button" value="Grab" onClick="document.form1.js.focus();document.form1.js.select();"><br />
+ <textarea rows="2" name="js" cols="75">in(jcode)</textarea></td>
+</tr>
+<tr>
+ <td width="100%" align=center>
+ <p><b>Server Side Include (SSI) Code</b></p>
+ <input type="button" value="Grab" onClick="document.form1.ssi.focus();document.form1.ssi.select();"><br />
+ <textarea rows="2" name="ssi" cols="75">in(ssicode)</textarea></td>
+</tr>
+<tr>
+ <td width="100%" align=center>              
+ <p><b>PHP Code</b></p>
+ <input type="button" value="Grab" onClick="document.form1.php.focus();document.form1.php.select();"><br />
+ <textarea rows="2" name="php" cols="75">in(phpcode)</textarea></td>
+</tr>
+<tr>
+ <td width="100%" align="center">
+ <p><b>Direct Link</b></p>
+ <input type="button" value="Grab" onClick="document.form1.direct.focus();document.form1.direct.select();"><br />
+ <textarea rows="2" name="direct" cols="75">in(directcode)</textarea></td>
+</tr>
+<tr>
+ <td width="100%">
+ <p align="center"><input type="button" class=button value="Back To Management" onClick="window.location = 'in(cgiurl)?command=manage';"></p></td>
+</tr>
+</table>
+</form>
+
+</body>
+</html>

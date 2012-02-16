@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Theodore Boyd's DoC Pages</title>
+      <meta charset="utf-8">
+      <!-- (C) 2008-2010 Theodore Boyd -->
+      <script type="text/javascript" src="scripts/tabs.js"></script>
+      <script type="text/javascript" src="scripts/supplementary.js"></script>
+   </head>
+   <body onload="resizeIframe()">
+      <div id="tab1" class="tabframe">
+         <div class="tabbar">
+            <a class="button tab default" style="font-size:200%;">&equiv;</a>
+            <a class="button tab" style="font-size:180%;" href="javascript:switchto('tab1', 'tab2')">&#9707;</a>
+            <div style="float: right;">
+               <img src="images/views.png" usemap="#viewtoggle"/>
+               <map name="viewtoggle">
+                 <area shape="rect" coords="0,0,29,22" href="javascript:switchto('tab2', 'tab1')" alt="Normal View" />
+                 <area shape="rect" coords="30,0,57,22" href="javascript:switchto('tab1', 'tab2')" alt="Column View" />
+               </map>
+            </div>
+         </div>
+         <iframe src ="indexbasic.html" id="iframe" class="iframe">
+            <p><span class="error">You don't have iFrames enabled</span></p>
+         </iframe>
+      </div>
+      <div id="tab2" class="tabframe" style="display:none;">
+         <div class="tabbar">
+            <a class="button tab" style="font-size:200%;" href="javascript:switchto('tab2', 'tab1')">&equiv;</a>
+            <a class="button tab default" style="font-size:180%;">&#9707;</a>
+            <div style="float: right;">
+               <img src="images/views.png" usemap="#viewtoggle"/>
+               <map name="viewtoggle">
+                 <area shape="rect" coords="0,0,29,22" href="javascript:switchto('tab2', 'tab1')" alt="Normal View" />
+                 <area shape="rect" coords="30,0,57,22" href="javascript:switchto('tab1', 'tab2')" alt="Column View" />
+               </map>
+            </div>
+         </div>
+         <iframe src ="indexfull.html" id="iframe" class="iframe">
+            <p><span class="error">You don't have iFrames enabled</span></p>
+         </iframe>
+      </div>
+   </body>
+</html>

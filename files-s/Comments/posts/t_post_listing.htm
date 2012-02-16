@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+        <title>Theodore Boyd's DoC Pages</title>
+        <!-- (C) 2008/9 Theodore Boyd, unless another author has been
+        credited in the comments. -->
+     </head>
+     <body>
+
+<p><b style="font-size:large;"><a style="color:#000000;font-weight:bold;text-decoration:none;" href="#add.post">
+<img src="../../../images/add.png"> Post a Comment</a></b><br />
+<i style="font-size:small;">Showing all posts, sorted by date:</i></p>
+<hr align="left" noshade size="1" color="#000000">
+<!-- POST ROW - START -->
+<b>in(post_name)</b>&nbsp;<i style="font-size:small;">on <b style="font-size:small;color:#ffbb00">in(post_date)</b></i>
+<br>in(posting)
+<hr align="left" noshade size="1" color="#000000">
+<!-- POST ROW - END -->
+<form action="in(cgiurl)" method="POST" name="form1">
+<input type="hidden" name="command" value="submitpost">
+<script language=javascript>
+document.write('<input type="hidden" name="fromurl" value="'+window.location+'">');
+</script>
+
+<div align="center">
+<table width="100%" border="0px">
+<tr>
+ <td width="100%" style="background-color:#ffbb00;">
+ <a name="add.post"></a><b>Post a Comment</b></td>
+</tr>
+<tr>
+ <td width="100%" style="background-color:#78a3bf;"><b>Name: </b>
+ <input type="text" name="post_name" size="56"></td>
+</tr>
+<tr>
+ <td width="100%" style="background-color:#78a3bf;"><b>Comment:</b><br />
+ <textarea rows="3" name="posting" cols="61"></textarea></td>
+</tr>
+<tr>
+ <td width="100%" style="background-color:#78a3bf;"><div align="center">
+ <input type=submit value="Submit Post"></div></td>
+</tr>
+</table>
+</div>
+
+</form>
+</body>
+</html>

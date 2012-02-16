@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <title>Theodore Boyd's DoC Pages</title>
+      <meta charset="utf-8">
+      <!-- (C) 2008-2010 Theodore Boyd -->
+      <link rel="stylesheet" type="text/css" href="../scripts/main.css" />
+      <script type="text/javascript">
+         function popup(url) {
+          params  = 'width='+screen.width;
+          params += ', height='+screen.height;
+          params += ', top=0, left=0, directories=no, location=no, menubar=no, resizable=no, scrollbars=auto, status=no, toolbar=no'
+          params += ', fullscreen=yes';
+          newwin=window.open(url,'windowname4', params);
+          if (window.focus) {newwin.focus()}
+          return false;
+         }
+         
+         function toggle(obj) {
+	         var elem = document.getElementById(obj);
+	         elem.style.display = (elem.style.display != 'none' ? 'none' : '' );
+         }
+      </script>
+   </head>
+   <body>
+      <header class="body">
+         <p><img class="thumb" src="../images/theo.jpg" /> Theodore Boyd</p>
+      </header>
+      <section id="content" class="body">
+         <h3>Slides</h3>
+         <p><span class="info">Flamenco</span> Launch in <a class="link" href="" onclick="popup('flamenco/index.html')">full screen mode</a><a class="link" href="javascript:toggle('instructions')">?</a> or <a class="link" href="flamenco/index.html">view normally</a></p>
+         <p>
+
+<pre class="info" id="instructions" style="display:none;">
+<strong>Full Screen Instructions</strong>
+
+<em>Windows</em>
+&nbsp;&nbsp;&nbsp;Change to full screen mode in your web browser (usually F11)
+&nbsp;&nbsp;&nbsp;Click the full screen link above
+<em>Mac OS</em>
+&nbsp;&nbsp;&nbsp;Install <a href="http://www.google.com/search?&q=SIMBL">SIMBL</a>
+&nbsp;&nbsp;&nbsp;Add <a href="http://www.google.com/search?&q=megazoomer">megazoomer.bundle</a> to ~/Library/Application Support/SIMBL/Plugins
+&nbsp;&nbsp;&nbsp;Open a SIMBL compatible web browser and navigate to this page*
+&nbsp;&nbsp;&nbsp;Click the full screen link above
+&nbsp;&nbsp;&nbsp;Press &#x2318;+&#x23ce;
+
+
+*<b class="smallprint">You may need to restart any open applications like your web broswer and Finder (<strong>killall Finder</strong>) after first install of megazoomer.bundle</b>
+</pre>
+      </p>
+      </section>
+      <footer class="body">
+         <p>&copy; 2010 Theodore Boyd</p>
+      </footer>
+   </body>
+</html>
