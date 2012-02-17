@@ -19,11 +19,11 @@
          <!-- -->
             <div style="float: left;">
             <header class="body">
-               <h2><img class="thumb" src="images/mvspt.png" alt="" /> MVSPT</h2>
+               <h2><img class="thumb" src="images/mvspt.png" alt="" /> MVSPT: <span class="vsmallprint">Material Versus Social Payoff Tournaments</span></h2>
             </header>
             <section id="content" class="body">
             <!-- Section: Upload -->
-               <h3>Upload A File</h3>
+               <h3>Strategy Upload Status</h3>
                <p>
                <?php
                   if ((($_FILES["file"]["type"] == "text/plain")
@@ -57,10 +57,10 @@
                     }
                   else
                     {
-                    echo "Invalid filetype or size.<br />Please upload a plain text file, Java/C/C++ source file or a PDF that is less than 2MB. ";
+                    echo "Invalid filetype or size.<br />Please upload a plain text file, Java/C/C++ source file or a PDF that is less than 2MB in size.";
                     }
                ?>
-               <p><a class="link" href="upload_ui.php">Upload (Another) File</a></p>
+               <p><a class="link" href="upload_ui.php">Back</a> to MVSPT site</p>
                <p><a class="link" href="index.html">Return</a> to the main site</p>
             </section>
          </div>

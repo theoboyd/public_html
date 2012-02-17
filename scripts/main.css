@@ -100,6 +100,17 @@ a.gold:hover {
    font-size: 60%;
 }
 
+.vsmallprint {
+   font-size: 40%;
+}
+
+.legallink, .plainlink {
+   color: #000000;
+   text-decoration: none;
+   font-weight: bold;
+   border-bottom: 1px solid #6688ff;
+}
+
 /* .tag styles, implied by status type */
 .link, .error, .info, .gold {
    color: #000000;
@@ -114,13 +125,13 @@ input[type=submit] {
    font-size: 90%;
    font-weight: bold;
    border: none;
-   height: 22px;
+   height: 23px;
 }
 
 input[type=file] {
    font-size: 90%;
    border: none;
-   height: 19px;
+   height: 23px;
 }
 
 .link {

@@ -8,6 +8,8 @@ $a[]="images/";
 $a[]="index.html";
 $a[]="java/";
 $a[]="scripts/";
+$a[]="template.html";
+$a[]="uploads/";
 /*
 $a[]="images/certified.png";
 $a[]="images/trophy.png";
