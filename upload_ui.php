@@ -50,14 +50,47 @@
             <p>The game to be played is a variant of the Prisoner's Dilemma that incorporates social and material components. You will have the chance to write a algorithm that can play this game against other algorithms (or strategies) submitted by players.</p>
             <h3>Competition</h3>
             <!-- Section: Description -->
-               <p>TBD</p>
+               <p>Simplified rules TBD. For a full description of the study, download the project interim report:</p>
+               <p><a class="gold" href="uploads/download.php?path=PIR.pdf">Project interim report</a> (Detailed PDF report, .pdf)</p>
             <br />
             <h3>Examples</h3>
-            <!-- Section: Description -->
                <p>To cater for as many people as possible, we will accept both strategies written out in English, formatted as <a class="plainlink" href="http://en.wikipedia.org/wiki/Pseudocode">pseudocode</a>, and also those written in code (Java, C++ and C).</p>
+               <div id="ex-tab1" class="buttonbar">
+                  <div class="tabbar">
+                     <a class="button tab default">Pseudocode</a>
+                     <a class="button tab" href="javascript:switchto('ex-tab1', 'ex-tab2')">Java</a>
+                  </div>
+                  <?php highlight_file("uploads/Example-Pseudocode-01.txt") ?>
+               </div>
+               <div id="ex-tab2" class="buttonbar" style="display: none;">
+                  <div class="tabbar">
+                     <a class="button tab" href="javascript:switchto('ex-tab2', 'ex-tab1')">Pseudocode</a>
+                     <a class="button tab default">Java</a>
+                  </div>
+                  <?php highlight_file("uploads/Example-Java-01.java") ?>
+               </div>
                <p>Try downloading one of these examples to get familiar with what a submission should look like. If you haven't done something similar before, it is strongly recommended you download an example and use it as a starting point for your own. You don't even have to change it very much to submit as a successful strategy of your own.</p>
                <p><a class="gold" href="uploads/download.php?path=Example-Pseudocode-01.txt">Example pseudocode strategy</a> (plain text file, .txt)</p>
                <p><a class="gold" href="uploads/download.php?path=Example-Java-01.java">Example Java strategy</a> (Java code, .java)</p>
+            <br />
+            <h3>Advanced Examples</h3>
+               <p>Here are some more involved examples to take a look at:</p>
+               <div id="ae-tab1" class="buttonbar">
+                  <div class="tabbar">
+                     <a class="button tab default">Nash Tit For Tat</a>
+                     <a class="button tab" href="javascript:switchto('ae-tab1', 'ae-tab2')">AE-GS</a>
+                  </div>
+                  <?php highlight_file("uploads/Ali-Ghoroghi-01.java") ?>
+               </div>
+               <div id="ae-tab2" class="buttonbar" style="display: none;">
+                  <div class="tabbar">
+                     <a class="button tab" href="javascript:switchto('ae-tab2', 'ae-tab1')">Nash Tit For Tat</a>
+                     <a class="button tab default">AE-GS</a>
+                  </div>
+                  <?php highlight_file("uploads/Georgios-Sakellariou-01.java") ?>
+               </div>
+               <p>Note how they make use of a <code>NashEquilibrium</code> module to obtain the Nash equilibrium for the particular lambda. This and other useful methods can be found in the source code for the MVSPT package which is available for study below. You may make use of any code that a <code>Strategy</code> class would have access to. If you are writing in pseudocode, you can assume common mathematical functions and the <code>NashEquilibrium</code> module to obtain the Nash equilibrium for a particular lambda as above.</p>
+               <p><a class="gold" href="uploads/download.php?path=MVSPT-src.zip">MVSPT Java framework source</a> (Zip archived Java code, .zip)</p>
             <br />
             <h3>Rules And Submission</h3>
             <!-- Section: Terms -->

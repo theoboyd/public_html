@@ -326,3 +326,28 @@ img.barcode {
    border: none;
    width: 100%;
 }
+
+/* Highlight string min colour scheme */
+.hsm_v {
+   color: blue; /*var*/
+}
+
+.hsm_s {
+   color: red; /*str*/
+}
+
+.hsm_c {
+   color: orange; /*comm*/
+}
+
+.hsm_f {
+   color: purple; /*fns*/
+}
+
+.hsm_h {
+   color: black; /*html*/
+}
+
+.hsm_n {
+   color: green; /*all*/
+}
