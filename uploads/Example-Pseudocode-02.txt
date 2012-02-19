@@ -1,0 +1,25 @@
+strategy SocialTitForTat:
+
+  initialise:
+    lambda = generate_random_number
+
+  responses:
+    if first round:
+      cooperate
+    otherwise:
+      // Not the first round
+      if last opponent response is cooperate:
+        // If the opponent last cooperated
+        increment lambda
+        respond with nash equilibrium for lambda
+      else:
+        // The opponent last defected
+        decrement lambda
+        respond with nash equilibrium for lambda
+
+  name:
+    "Nash Tit For Tat"
+
+  author:
+    "FirstName LastName"
+    // Contact email: EmailAddress
