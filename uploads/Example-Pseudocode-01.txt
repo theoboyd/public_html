@@ -17,9 +17,9 @@ strategy SocialTitForTat:
         decrement lambda
         defect
 
-  strategy name:
+  name:
     "Social Tit For Tat"
 
-  strategy author:
+  author:
     "FirstName LastName"
     // Contact email: EmailAddress
