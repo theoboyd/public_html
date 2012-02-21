@@ -279,7 +279,7 @@
                   <div id="upload-box" style="display: none;">
                      <br />
                      <h3>Upload A Strategy</h3>
-                     <form action="upload_script.php" method="post" enctype="multipart/form-data">
+                     <form action="upload.php" method="post" enctype="multipart/form-data">
                         <p>Please upload a plain text file, Java/C/C++ source file or a PDF that is less than 2MB in size.</p>
                         <p>You must give it a unique name. For example, if this is your first submission, a good name is<br /><big><code>FirstName-LastName-01.txt</code></big> (or <big><code>.java/.c/.cpp/.pdf</code></big>). Remember to include your email address in your strategy so that we can contact you if you win!</p>
                         <span>

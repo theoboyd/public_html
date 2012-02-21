@@ -60,7 +60,7 @@
                     echo "Invalid filetype or size.<br />Please upload a plain text file, Java/C/C++ source file or a PDF that is less than 2MB in size.";
                     }
                ?>
-               <p><a class="link" href="upload_ui.php">Back</a> to MVSPT site</p>
+               <p><a class="link" href="mvspt.php">Back</a> to MVSPT site</p>
                <p><a class="link" href="index.html">Return</a> to the main site</p>
             </section>
          </div>
