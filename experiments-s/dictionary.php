@@ -1,5 +1,5 @@
 <?php
-$a[]="index.html";
+$a[]="index.php";
 $a[]="error.php";
 $a[]="helpbasic.html";
 $a[]="experiments/helpfull.html";

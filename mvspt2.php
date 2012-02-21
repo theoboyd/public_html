@@ -1,44 +1,23 @@
 #!/usr/bin/php
-<!doctype html>
-<html lang="en">
-   <head>
-      <title>Theodore Boyd's DoC Pages</title>
-      <meta charset="utf-8">
-      <!-- (C) 2008-2012 Theodore Boyd -->
-      <link rel="stylesheet" type="text/css" href="scripts/main.css" />
-      <link rel="stylesheet" type="text/css" href="scripts/columns.css" />
-      <script type="text/javascript" src="scripts/supplementary.js"></script>
-      <script type="text/javascript" src="scripts/ajax.js"></script>
-      <script type="text/javascript" src="scripts/tabs.js"></script>
-      <script type="text/javascript" src="scripts/jquery.js"></script>
-      <script type="text/javascript" src="scripts/browser.js"></script>
-      <script type="text/javascript" src="scripts/ASCIIMathML.js"></script>
-     <?php
-        // Constants
-        $material_prize = "TBD";
-        $charity_total = "TBD";
-        $charity_name = "charity";
-        $max_entries_pp = 5;
-        $department_list = "Department of Computing";
-        $end_date = "TBD, likely " . date("l jS \of F Y", mktime(0, 0, 0, 3, 1, 2012));
-        $default_strategies_will = "not be eligible";
+<?php
+   include('header.php');
+   include('header-mvspt.php');
+   // Constants
+   $material_prize = "TBD";
+   $charity_total = "TBD";
+   $charity_name = "charity";
+   $max_entries_pp = 5;
+   $department_list = "Department of Computing";
+   $end_date = "TBD, likely " . date("l jS \of F Y", mktime(0, 0, 0, 3, 1, 2012));
+   $default_strategies_will = "not be eligible";
 
-        // Code syntax highlighting
-        include("scripts/geshi.php");
-        $geshi = new GeSHi();
-        //$geshi->set_language_path("/geshi");
-        $geshi->enable_line_numbers(GESHI_FANCY_LINE_NUMBERS);
-        $geshi->set_header_type(GESHI_HEADER_DIV);
-     ?>
-   </head>
-   <body>
-      <div id="wrap">
-         <div id="main">
-         <!-- -->
-            <div style="float: left;">
-            <header class="body">
-               <h2><img class="thumb" src="images/mvspt.png" alt="" /> MVSPT: <span class="vsmallprint">Material Versus Social Payoff Tournaments</span></h2>
-            </header>
+   // Code syntax highlighting
+   include("scripts/geshi.php");
+   $geshi = new GeSHi();
+   //$geshi->set_language_path("/geshi");
+   $geshi->enable_line_numbers(GESHI_FANCY_LINE_NUMBERS);
+   $geshi->set_header_type(GESHI_HEADER_DIV);
+?>
             <section id="content" class="body">
             <h3>Introduction</h3>
             <!-- Section: Info -->
@@ -279,11 +258,11 @@
                      <li>The winner selection will be interpreted using the Strategy Terms and other rules on this page but the decision of the organiser is final in the case of dispute or uncertainty.</li>
                      <li>Prizes are non-transferable and non-exchangeable. However, if the stated prize is not available, an alternative prize of value acceptable to both the recipient and organiser may need to be provided as a replacement.</li>
                      <li>Anybody can find out who won the competition by emailing the organiser.</li>
-                     <li>The competition organiser is Theodore Boyd who is in the University's Department of Computing and can be contacted via the details on <a href="index.html" class="legallink">his homepage.</a></li>
+                     <li>The competition organiser is Theodore Boyd who is in the University's Department of Computing and can be contacted via the details on <a href="index.php" class="legallink">his homepage.</a></li>
                   </ol>
                   <p>These rules may be subject to change without notice. If a change is made that significantly impacts those submissions already made, we will contact participants that have provided details for that purpose.</p>
             <!-- Section: Upload -->
-                  <p><span class="fakelink link" id="upload-toggle" onclick="$('#upload-box').toggle(400);"><img class="icon" src="images/certified.png" alt="" /> I agree to all terms</span>&nbsp;<a class="error" href="index.html"><img class="icon" src="images/rejected.png" alt="" /> Cancel</a></p>
+                  <p><span class="fakelink link" id="upload-toggle" onclick="$('#upload-box').toggle(400);"><img class="icon" src="images/certified.png" alt="" /> I agree to all terms</span>&nbsp;<a class="error" href="index.php"><img class="icon" src="images/rejected.png" alt="" /> Cancel</a></p>
                   <div id="upload-box" style="display: none;">
                      <br />
                      <h3>Upload A Strategy</h3>
@@ -299,7 +278,7 @@
                   </div>
                </div>
             <br />
-               <p><a class="link" href="index.html">Return</a> to the main site</p>
+               <p><a class="link" href="index.php">Return</a> to the main site</p>
                <p><span class="smallprint">&copy; 2011-2012 Theodore Boyd. Advanced strategy examples provided by Ali Ghoroghi. For a full list of references and a bibliography, please refer to the project interim report linked above.</span></p>
             </section>
          </div>
@@ -311,9 +290,6 @@
          </div>
          <div id="sidebar">
          </div>
-         <div id="footer">
-         </div>
-      </div>
-   </body>
-</html>
-
+<?php
+   include('footer.php');
+?>

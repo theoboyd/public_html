@@ -176,7 +176,7 @@ echo "</td>\n";
       <div class="wrapper"> 
          <div class="container tall" id="superoverlaybonanza">
             <span id="superoverlaybonanza-inner">
-               <p class="error">Warning: This page does not follow the new stylesheet and will most likely NOT be updated any time soon. <a class="link" href="../index.html">Go back</a>.</p>
+               <p class="error">Warning: This page does not follow the new stylesheet and will most likely NOT be updated any time soon. <a class="link" href="../index.php">Go back</a>.</p>
             </span>
          </div>
       </div>      

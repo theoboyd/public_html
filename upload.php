@@ -61,7 +61,7 @@
                     }
                ?>
                <p><a class="link" href="mvspt.php">Back</a> to MVSPT site</p>
-               <p><a class="link" href="index.html">Return</a> to the main site</p>
+               <p><a class="link" href="index.php">Return</a> to the main site</p>
             </section>
          </div>
          <div style="clear: both;">

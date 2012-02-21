@@ -1,28 +1,10 @@
-<!doctype html>
-<html lang="en">
-   <head>
-      <title>Theodore Boyd's DoC Pages</title>
-      <meta charset="utf-8">
-      <!-- (C) 2008-2012 Theodore Boyd -->
-      <link rel="stylesheet" type="text/css" href="scripts/main.css" />
-      <link rel="stylesheet" type="text/css" href="scripts/columns.css" />
-      <script type="text/javascript" src="scripts/supplementary.js"></script>
-      <script type="text/javascript" src="scripts/ajax.js"></script>
-      <script type="text/javascript" src="scripts/tabs.js"></script>
-      <script type="text/javascript" src="scripts/jquery.js"></script>
-      <script type="text/javascript" src="scripts/browser.js"></script>
-   </head>
-   <body>
-      <div id="wrap">
-         <div id="main">
-         <!-- -->
-            <div style="float: left;">
-            <header class="body">
-               <h2><img class="thumb" src="images/theo.jpg" alt="" /> Theodore Boyd</h2>
-               <h2><a class="link" href="mvspt.php"><img class="thumb" src="images/mvspt.png" alt="" /> MVSPT: <span class="vsmallprint">Material Versus Social Payoff Tournaments</span></a></h2>
-            </header>
+#!/usr/bin/php
+<?php
+   include('header.php');
+   include('header-theo.php');
+?>
             <section id="content" class="body">
-             <!-- Section: Friendly browser warning -->
+            <!-- Section: Friendly browser warning -->
                 <script type="text/javascript">
                     <!--
                     if (BrowserDetect.browser == "Netscape" || (BrowserDetect.browser == "IE" && BrowserDetect.version < 7))
@@ -78,8 +60,6 @@ project <img class="icon" src="images/trophy.png" alt="" /></a>*</p>
             </form>
             <p><span id="txtHint"></span></p>
          </div>
-         <div id="footer">
-         </div>
-      </div>
-   </body>
-</html>
+<?php
+   include('footer.php');
+?>
