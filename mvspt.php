@@ -21,6 +21,7 @@
         $max_entries_pp = 5;
         $department_list = "Department of Computing";
         $end_date = "TBD, likely " . date("l jS \of F Y", mktime(0, 0, 0, 3, 1, 2012));
+        $default_strategies_will = "not be eligible";
 
         // Code syntax highlighting
         include("scripts/geshi.php");
@@ -45,7 +46,6 @@
             <h3>The Game</h3>
             <p>The game to be played is a variant of the Prisoner's Dilemma that incorporates social and material components. You will have the chance to write an algorithm that can play this game against other algorithms (strategies) submitted by players.</p>
             <p>We will gradually build up the game description. First we start with the original Prisoner's Dilemma:</p>
-            <h4>Prisoner's Dilemma</h4>
             <blockquote>Two people are arrested for committing the same crime, but the police do not possess enough information for a conviction. They are separated such that they cannot communicate with each other. The police offer both of them the same deal &mdash; if one testifies against their partner (defects / betrays), and the other remains silent (cooperates / assists), the betrayer goes free and the cooperator receives the full one-year sentence. If both remain silent, both are sentenced to only one month in jail for a minor charge. If each betrays the other, each receives a three-month sentence as they will be guaranteed early release by the prosecution. Each prisoner must choose either to betray or remain silent; the decision of each is kept quiet.</blockquote>
             <p>Or, more simply:</p>
             <table>
@@ -151,6 +151,12 @@
                   <li><strong>Not too clever</strong> &mdash; Strategies that try to make inferences or overly-complex decisions about opponents and gameplay often lose out and should try not to be too clever or tricky.
                </ul>
                <p>Strategies that are submitted will compete over a large number of rounds. Apart from this, they must follow a number of stated restrictions as set out in the Strategy Terms later on this page. A number of simplifications and moral restrictions, such as using $\lambda$ with discrete values and limiting its maximum change, and the specific values for the scores in the tables above, for example, are defined there. Time permitting, we may conduct more than one main tournament, with different rules for each. Otherwise, the only variations should be in the strategies themselves: their strategy (and its complexity), initial social coefficient and starting move.</p>
+               <p>The structure will follow this timeline (allowing for more tournamentsif there is time):</p>
+               <ol>
+                  <li><strong>Friendly Tournament(s)</strong></li>
+                  <li>Break &mdash; feedback and time for improvements and resubmission</li>
+                  <li><strong>Prize-eligible Tournament</strong></li>
+               </ol>
                <p>For a more in-depth description of the study that we will be prforming, download the project interim report:</p>
                <p><a class="gold" href="uploads/download.php?path=PIR.pdf">Project interim report</a> (Detailed PDF report, .pdf)</p>
             <br />
@@ -252,8 +258,10 @@
                      <li>We will limit by how much strategies may change their $\lambda$ per round using $\delta \in [-1.0, 1.0]$. The specific value will be included in the framework code and is small to prevent abrupt changes from total material to total social contribution and vice versa.</li>
                      <li>For the sake of privacy and the more accurate modelling of the ability of players to discern each others' strategies, we will use a variable to represent how deeply into an opponent's recent move history, $\chi_{move}$, and social coefficient history, $\chi_{coeff}$ the player can read. We will aim to keep $\chi_{move} = n$ (all visible) but have $\chi_{coeff} \geq 1$.</li>
                      <li>It is not permitted to attempt to cooperate just after having defected and reduced one's social coefficient. Similarly, it is not permitted to attempt to defect just after having cooperated and raised one's social coefficient. Both of these measures are in place to prevent undermining the concept of the game and if a strategy attempts to perform one of these combinations, it is invalid.</li>
-                     <li>The winner of the material prize is the person that submitted the strategy which obtained the highest material score in the prize-eligible tournament.</li>
+                     <li>The winner of the material prize is the person that submitted the strategy which obtained the highest material score in the Prize-eligible Tournament.</li>
                      <li>There is no winner of the social prize; the donation to charity will be managed by the tournament organisers and attributed proportionally to people whose strategies contributed socially.</li>
+                     <li>The "Prize-eligible Tournament" is the tournament in which the winner will be able to receive a prize. "Friendly Tournaments" are played only for competition and for the opportunity to improve strategies before the Prize-eligible Tournament. The break between the two types of tournament depends on participation rates but will likely last a number of days and will be announced on this page.</li>
+                     <li>A number of "Default Strategies" will be seeded into the tournaments which will <?php echo $default_strategies_will ?> to win but will assist in making the strategy pool more active. These include, but are not limited to, "Tit-For-Tat" and its variants as above, "Always Cooperates", "Always Defects" and "Always Random".</li>
                   </ol>
                   <p>These are the terms and conditions of the competition and prizes ("Competition Terms"):</p>
                   <ol>
