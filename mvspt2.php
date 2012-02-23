@@ -3,7 +3,7 @@
    include('header.php');
    include('header-mvspt.php');
    // Constants
-   $material_prize = "TBD";
+   $material_prize = "150";
    $charity_total = "TBD";
    $charity_name = "charity";
    $max_entries_pp = 5;
@@ -281,15 +281,7 @@
                <p><a class="link" href="index.php">Return</a> to the main site</p>
                <p><span class="smallprint">&copy; 2011-2012 Theodore Boyd. Advanced strategy examples provided by Ali Ghoroghi. For a full list of references and a bibliography, please refer to the project interim report linked above.</span></p>
             </section>
-         </div>
-         <div style="clear: both;">
-            <footer class="body">
-            </footer>
-         </div>
-         <!-- -->
-         </div>
-         <div id="sidebar">
-         </div>
 <?php
+   include('footer-preblank.php');
    include('footer.php');
 ?>

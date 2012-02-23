@@ -1,7 +1,7 @@
 #!/usr/bin/php
 <?php
    include('header.php');
-   include('header-theo.php');
+   include('header-promo.php');
 ?>
             <section id="content" class="body">
             <!-- Section: Friendly browser warning -->

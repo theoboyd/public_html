@@ -1,26 +1,8 @@
 #!/usr/bin/php
-<!doctype html>
-<html lang="en">
-   <head>
-      <title>Theodore Boyd's DoC Pages</title>
-      <meta charset="utf-8">
-      <!-- (C) 2008-2011 Theodore Boyd -->
-      <link rel="stylesheet" type="text/css" href="scripts/main.css" />
-      <link rel="stylesheet" type="text/css" href="scripts/columns.css" />
-      <script type="text/javascript" src="scripts/supplementary.js"></script>
-      <script type="text/javascript" src="scripts/ajax.js"></script>
-      <script type="text/javascript" src="scripts/tabs.js"></script>
-      <script type="text/javascript" src="scripts/jquery.js"></script>
-      <script type="text/javascript" src="scripts/browser.js"></script>
-   </head>
-   <body>
-      <div id="wrap">
-         <div id="main">
-         <!-- -->
-            <div style="float: left;">
-            <header class="body">
-               <h2><img class="thumb" src="images/mvspt.png" alt="" /> MVSPT: <span class="vsmallprint">Material Versus Social Payoff Tournaments</span></h2>
-            </header>
+<?php
+   include('header.php');
+   include('header-mvspt.php');
+?>
             <section id="content" class="body">
             <!-- Section: Upload -->
                <h3>Strategy Upload Status</h3>
@@ -63,19 +45,7 @@
                <p><a class="link" href="mvspt.php">Back</a> to MVSPT site</p>
                <p><a class="link" href="index.php">Return</a> to the main site</p>
             </section>
-         </div>
-         <div style="clear: both;">
-            <footer class="body">
-            </footer>
-         </div>
-         <!-- -->
-         </div>
-         <div id="sidebar">
-         </div>
-         <div id="footer">
-         </div>
-      </div>
-   </body>
-</html>
-
-
+<?php
+   include('footer-preblank.php');
+   include('footer.php');
+?>
