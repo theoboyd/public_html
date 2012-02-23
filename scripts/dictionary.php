@@ -1,6 +1,4 @@
 <?php
-$a[]="clock.html";
-$a[]="dashboard.html";
 $a[]="error.php";
 $a[]="experiments-s/";
 $a[]="files-s/";

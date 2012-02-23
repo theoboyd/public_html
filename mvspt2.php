@@ -1,20 +1,21 @@
 #!/usr/bin/php
 <?php
    include('header.php');
+   echo '<script type="text/javascript" src="scripts/ASCIIMathML.js"></script>';
    include('header-mvspt.php');
    // Constants
-   $material_prize = "150";
-   $charity_total = "TBD";
-   $charity_name = "charity";
+   $material_prize = '150';
+   $charity_total = 'TBD';
+   $charity_name = 'charity';
    $max_entries_pp = 5;
-   $department_list = "Department of Computing";
-   $end_date = "TBD, likely " . date("l jS \of F Y", mktime(0, 0, 0, 3, 1, 2012));
-   $default_strategies_will = "not be eligible";
+   $department_list = 'Department of Computing';
+   $end_date = 'TBD, likely ' . date('l jS \of F Y', mktime(0, 0, 0, 3, 1, 2012));
+   $default_strategies_will = 'not be eligible';
 
    // Code syntax highlighting
-   include("scripts/geshi.php");
+   include('scripts/geshi.php');
    $geshi = new GeSHi();
-   //$geshi->set_language_path("/geshi");
+   //$geshi->set_language_path('/geshi');
    $geshi->enable_line_numbers(GESHI_FANCY_LINE_NUMBERS);
    $geshi->set_header_type(GESHI_HEADER_DIV);
 ?>
@@ -237,8 +238,8 @@
                      <li>We will limit by how much strategies may change their $\lambda$ per round using $\delta \in [-1.0, 1.0]$. The specific value will be included in the framework code and is small to prevent abrupt changes from total material to total social contribution and vice versa.</li>
                      <li>For the sake of privacy and the more accurate modelling of the ability of players to discern each others' strategies, we will use a variable to represent how deeply into an opponent's recent move history, $\chi_{move}$, and social coefficient history, $\chi_{coeff}$ the player can read. We will aim to keep $\chi_{move} = n$ (all visible) but have $\chi_{coeff} \geq 1$.</li>
                      <li>It is not permitted to attempt to cooperate just after having defected and reduced one's social coefficient. Similarly, it is not permitted to attempt to defect just after having cooperated and raised one's social coefficient. Both of these measures are in place to prevent undermining the concept of the game and if a strategy attempts to perform one of these combinations, it is invalid.</li>
-                     <li>The winner of the material prize is the person that submitted the strategy which obtained the highest material score in the Prize-eligible Tournament.</li>
-                     <li>There is no winner of the social prize; the donation to charity will be managed by the tournament organisers and attributed proportionally to people whose strategies contributed socially.</li>
+                     <li>The winner of the material prize is the person that submitted the strategy which obtained the highest total score in the Prize-eligible Tournament. Total score means the value $\tau$ in the following formula: $\tau$ = $(1 - \gamma)$material_total + $\gamma$social_total, where $\gamma$ = 0.5 for the Prize-eligible Tournament.</li>
+                     <li>There is no personal winner of the social prize; the donation to charity will be managed by the tournament organisers and attributed proportionally to people whose strategies contributed socially.</li>
                      <li>The "Prize-eligible Tournament" is the tournament in which the winner will be able to receive a prize. "Friendly Tournaments" are played only for competition and for the opportunity to improve strategies before the Prize-eligible Tournament. The break between the two types of tournament depends on participation rates but will likely last a number of days and will be announced on this page.</li>
                      <li>A number of "Default Strategies" will be seeded into the tournaments which will <?php echo $default_strategies_will ?> to win but will assist in making the strategy pool more active. These include, but are not limited to, "Tit-For-Tat" and its variants as above, "Always Cooperates", "Always Defects" and "Always Random".</li>
                   </ol>
