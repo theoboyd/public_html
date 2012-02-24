@@ -14,6 +14,7 @@ public class SocialTitForTat extends Strategy {
   public Response respond() {
     if (getRoundsPlayed() == 0) {
       // First round
+      lambda.noChange();
       return Response.C;
     } else {
       // Not the first round

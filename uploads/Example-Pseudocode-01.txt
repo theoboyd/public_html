@@ -5,6 +5,7 @@ strategy SocialTitForTat:
 
   responses:
     if first round:
+      do not change lambda
       cooperate
     otherwise:
       // Not the first round
