@@ -5,7 +5,7 @@
                <div id="terms-box" style="display: none;">
                   <br />
                   <?php include('mvspt-tsandcs.php'); ?>
-                  <p><span class="fakelink link" id="upload-toggle" onclick="$('#upload-box').toggle(400);"><img class="icon" src="images/certified.png" alt="" /> I agree to all terms</span>&nbsp;<a class="error" href="index.php"><img class="icon" src="images/rejected.png" alt="" /> Cancel</a></p>
+                  <p><span class="fakelink link" id="upload-toggle" onclick="$('#upload-box').toggle(400);"><img class="icon" src="images/certified.png" alt="" /> I agree to these terms</span>&nbsp;<a class="error" href="index.php"><img class="icon" src="images/rejected.png" alt="" /> Cancel</a></p>
                   <div id="upload-box" style="display: none;">
                      <br />
                      <?php include('mvspt-uploadstrategy.php'); ?>

@@ -1,5 +1,6 @@
                   <h3>Terms And Conditions</h3>
                   <p>These are the restrictions that affect the tournament and strategies ("Strategy Terms"):</p>
+                  <div class="smallprint">
                   <ol>
                      <li>$T > R > P > S$ &mdash; this makes it clear that while the temptation is to betray, it will be a better game for players to mostly cooperate.</li>
                      <li>$R > \frac{T + S}{2}$ &mdash; to prevent players from simply alternating between defecting and cooperating, we give them a better average score when mutually cooperating.</li>
@@ -11,12 +12,14 @@
                      <li>We will limit by how much strategies may change their $\lambda$ per round using $\delta \in [-1.0, 1.0]$. The specific value will be included in the framework code and is small to prevent abrupt changes from total material to total social contribution and vice versa.</li>
                      <li>For the sake of privacy and the more accurate modelling of the ability of players to discern each others' strategies, we will use a variable to represent how deeply into an opponent's recent move history, $\chi_{move}$, and social coefficient history, $\chi_{coeff}$ the player can read. We will aim to keep $\chi_{move} = n$ (all visible) but have $\chi_{coeff} \geq 1$.</li>
                      <li>It is not permitted to attempt to cooperate just after having defected and reduced one's social coefficient. Similarly, it is not permitted to attempt to defect just after having cooperated and raised one's social coefficient. Both of these measures are in place to prevent undermining the concept of the game and if a strategy attempts to perform one of these combinations, it is invalid.</li>
-                     <li>The winner of the material prize is the person that submitted the strategy which obtained the highest total score in the Prize-eligible Tournament. Total score means the value $\tau$ in the following formula: $\tau$ = $(1 - \gamma)$material_total + $\gamma$social_total, where $\gamma$ = 0.5 for the Prize-eligible Tournament.</li>
+                     <li>The winner of the material prize is the person that submitted the strategy which obtained the highest total score in the Prize-eligible Tournament. Total score means the value $\tau$ in the following formula: $\tau$ = $(1 - \gamma)$material_total + $\gamma$social_total, where the societal social coefficient, $\gamma$ is 0.5 for the Prize-eligible Tournament.</li>
                      <li>There is no personal winner of the social prize; the donation to charity will be managed by the tournament organisers and attributed proportionally to people whose strategies contributed socially.</li>
                      <li>The "Prize-eligible Tournament" is the tournament in which the winner will be able to receive a prize. "Friendly Tournaments" are played only for competition and for the opportunity to improve strategies before the Prize-eligible Tournament. The break between the two types of tournament depends on participation rates but will likely last a number of days and will be announced on this page.</li>
                      <li>A number of "Default Strategies" will be seeded into the tournaments which will <?php echo $default_strategies_will ?> to win but will assist in making the strategy pool more active. These include, but are not limited to, "Tit-For-Tat" and its variants as above, "Always Cooperates", "Always Defects" and "Always Random".</li>
                   </ol>
+                  </div>
                   <p>These are the terms and conditions of the competition and prizes ("Competition Terms"):</p>
+                  <div class="smallprint">
                   <ol>
                      <li>To submit a strategy there are no restrictions on age, residence, etc.</li>
                      <li>The above notwithstanding, to be eligible to receive a monetary prize you must be: (a) aged 18 or over at the time of submission; (b) a full-time student or member of staff of Imperial College London (The Imperial College of Science, Technology and Medicine, henceforth the "University"); (c) in the <?php echo $department_list ?> at the University.</li>
@@ -34,4 +37,5 @@
                      <li>Anybody can find out who won the competition by emailing the organiser.</li>
                      <li>The competition organiser is Theodore Boyd who is in the University's Department of Computing and can be contacted via the details on <a href="index.php" class="legallink">his homepage.</a></li>
                   </ol>
+                  </div>
                   <p>These rules may be subject to change without notice. If a change is made that significantly impacts those submissions already made, we will contact participants that have provided details for that purpose.</p>
