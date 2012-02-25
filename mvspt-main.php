@@ -65,7 +65,7 @@
                   }
                ?>
                <br /><br /><br />
-               <p><span class="smallprint">&copy; 2011-2012 Theodore Boyd. Advanced strategy examples provided by Ali Ghoroghi. For a full list of references and a bibliography, please refer to the project interim report linked above.</span></p>
+               <p><span class="smallprint">&copy; 2011-2012 Theodore Boyd. Advanced strategy examples provided by Ali Ghoroghi. For a full list of references and a bibliography, please refer to the project interim report linked in Tournament Theory under the <?php echo $further_reading_tab ?> tab.</span></p>
             </section>
 <?php
    include('footer-preblank.php');
