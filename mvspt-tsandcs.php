@@ -1,7 +1,26 @@
                   <h3>Terms And Conditions</h3>
+                  <div class="vsmallprint">
                   <p>These are the restrictions that affect the tournament and strategies ("Strategy Terms"):</p>
-                  <div class="smallprint">
                   <ol>
+                     <li>Taking the meaning of (X, Y) to be that player A receives X and player B receives Y, the payoff matrix used will be:
+                        <table>
+                           <tr>
+                             <th></th>
+                             <th>Player B cooperates</th>
+                             <th>Player B defects</th>
+                           </tr>
+                           <tr>
+                             <th>Player A cooperates</th>
+                             <td class="mathcell">((1-$\lambda_A$)R, $\lambda_A$M), ((1-$\lambda_B$)R, $\lambda_B$M)</td>
+                             <td class="mathcell">((1-$\lambda_A$)S, $\lambda_A$M), ((1-$\lambda_B$)T, $\lambda_B$M')</td>
+                           </tr>
+                           <tr>
+                             <th>Player A defects</th>
+                             <td class="mathcell">((1-$\lambda_A$)T, $\lambda_A$M'), ((1-$\lambda_B$)S, $\lambda_B$M)</td>
+                             <td class="mathcell">((1-$\lambda_A$)P, $\lambda_A$M'), ((1-$\lambda_B$)P, $\lambda_B$M')</td>
+                           </tr>
+                        </table>
+                     </li>
                      <li>$T > R > P > S$ &mdash; this makes it clear that while the temptation is to betray, it will be a better game for players to mostly cooperate.</li>
                      <li>$R > \frac{T + S}{2}$ &mdash; to prevent players from simply alternating between defecting and cooperating, we give them a better average score when mutually cooperating.</li>
                      <li>$M > \frac{R + P}{2}$ &mdash; for there to be a strong incentive to play the social route.</li>
@@ -17,9 +36,7 @@
                      <li>The "Prize-eligible Tournament" is the tournament in which the winner will be able to receive a prize. "Friendly Tournaments" are played only for competition and for the opportunity to improve strategies before the Prize-eligible Tournament. The break between the two types of tournament depends on participation rates but will likely last a number of days and will be announced on this page.</li>
                      <li>A number of "Default Strategies" will be seeded into the tournaments which will <?php echo $default_strategies_will ?> to win but will assist in making the strategy pool more active. These include, but are not limited to, "Tit-For-Tat" and its variants as above, "Always Cooperates", "Always Defects" and "Always Random".</li>
                   </ol>
-                  </div>
                   <p>These are the terms and conditions of the competition and prizes ("Competition Terms"):</p>
-                  <div class="smallprint">
                   <ol>
                      <li>To submit a strategy there are no restrictions on age, residence, etc.</li>
                      <li>The above notwithstanding, to be eligible to receive a monetary prize you must be: (a) aged 18 or over at the time of submission; (b) a full-time student or member of staff of Imperial College London (The Imperial College of Science, Technology and Medicine, henceforth the "University"); (c) in the <?php echo $department_list ?> at the University.</li>
@@ -37,5 +54,5 @@
                      <li>Anybody can find out who won the competition by emailing the organiser.</li>
                      <li>The competition organiser is Theodore Boyd who is in the University's Department of Computing and can be contacted via the details on <a href="index.php" class="legallink">his homepage.</a></li>
                   </ol>
-                  </div>
                   <p>These rules may be subject to change without notice. If a change is made that significantly impacts those submissions already made, we will contact participants that have provided details for that purpose.</p>
+                  </div>

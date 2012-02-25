@@ -5,12 +5,13 @@
    include('header-mvspt.php');
    // Constants
    $material_prize = '150';
-   $charity_total = 'TBD';
+   $charity_total = '(tbd)';
    $charity_name = 'charity';
    $max_entries_pp = 5;
    $department_list = 'Department of Computing';
    $end_date = date('l jS \of F Y', mktime(0, 0, 0, 4, 1, 2012));
    $default_strategies_will = 'not be eligible';
+   $further_reading_tab = 'More...';
 
    // Code syntax highlighting
    include('scripts/geshi.php');
@@ -19,13 +20,12 @@
    $geshi->enable_line_numbers(GESHI_FANCY_LINE_NUMBERS);
    $geshi->set_header_type(GESHI_HEADER_DIV);
    $pages = Array(
-                  Array('path' => 'mvspt-intro.php', 'title' => 'Introduction', 'shorttitle' => 'Step 1'),
-                  Array('path' => 'mvspt-game.php', 'title' => 'The Game', 'shorttitle' => 'Step 2'),
-                  Array('path' => 'mvspt-tournament.php', 'title' => 'The Tournament', 'shorttitle' => 'Step 3'),
-                  Array('path' => 'mvspt-needtodo.php', 'title' => 'What You Need To Do', 'shorttitle' => 'Step 4'),
-                  Array('path' => 'mvspt-examples.php', 'title' => 'Examples', 'shorttitle' => 'Step 5'),
-                  Array('path' => 'mvspt-advancedexamples.php', 'title' => 'Advanced Examples', 'shorttitle' => 'Step 6'),
-                  Array('path' => 'mvspt-rules.php', 'title' => 'Rules And Submission', 'shorttitle' => 'Step 7')
+                  Array('path' => 'mvspt-intro.php', 'title' => 'Introduction', 'class' => 'largeprint'),
+                  Array('path' => 'mvspt-simplegame.php', 'title' => 'Game', 'class' => 'largeprint'),
+                  Array('path' => 'mvspt-whattodo.php', 'title' => 'What To Do', 'class' => 'largeprint'),
+                  Array('path' => 'mvspt-examples.php', 'title' => 'Examples', 'class' => 'largeprint'),
+                  Array('path' => 'mvspt-rules.php', 'title' => 'Submission', 'class' => 'largeprint'),
+                  Array('path' => 'mvspt-advanced.php', 'title' => $further_reading_tab, 'class' => '')
                  )
 ?>
             <section id="content" class="body">
@@ -42,26 +42,29 @@
                               <div class="tabbar">';
                      for ($j = 0; $j < $size; $j++) {
                         if ($i == $j) {
-                           echo '<a class="button tab default">' . $pages[$j]['shorttitle'] . '</a>';
+                           echo '<a class="button tab default">' . $pages[$j]['title'] . '</a>';
                         } else {
-                           echo '<a class="button tab" href="javascript:switchto(\'main-tab' . $i . '\', \'main-tab' . $j . '\')">' . $pages[$j]['shorttitle'] . '</a>';
+                           echo '<a class="button tab" href="javascript:switchto(\'main-tab' . $i . '\', \'main-tab' . $j . '\')">' . $pages[$j]['title'] . '</a>';
                         }
                      }
-                     echo '   </div>';
+                     echo '   </div>
+                              <div class="' . $pages[$i]['class'] . '">';
                      $file = $pages[$i]['path'];
                      include($file);
-                     echo '<br /><br />';
-                     if ($i < $size - 1) {
+                     echo '   </div>
+                              <br /><br />';
+                     if ($i < $size - 2) {
                         echo '<a class="button default" href="javascript:switchto(\'main-tab' . $i . '\', \'main-tab' . ($i + 1) . '\')">Continue</a>';
                      }
                      if ($i > 0) {
                         echo '<a class="button" href="javascript:switchto(\'main-tab' . $i . '\', \'main-tab' . ($i - 1) . '\')">Back</a>';
+                     } else {
+                        echo '<a class="button" href="index.php">Back</a>';
                      }
                      echo '</div>';
                   }
                ?>
                <br /><br /><br />
-               <p><a class="link" href="index.php">Return</a> to the main site</p>
                <p><span class="smallprint">&copy; 2011-2012 Theodore Boyd. Advanced strategy examples provided by Ali Ghoroghi. For a full list of references and a bibliography, please refer to the project interim report linked above.</span></p>
             </section>
 <?php

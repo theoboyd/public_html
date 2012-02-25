@@ -1,0 +1,6 @@
+            <h3>What You Need To Do</h3>
+            <p>Write a strategy that plays the game according to the description given previously (and conforms to the terms and conditions at the end).</p>
+            <p>At the beginning, you need to choose a starting value for your social coefficient. And in each round, you either need to <strong>increase, decrease or leave unchanged your social coefficient</strong>. In addition, you should either <strong>respond with a cooperation or defection</strong> to your opponent.</p>
+            <p>Keep in mind that you aren't allowed to cooperate just after having defected and reduced one's social coefficient. Similarly, you cannot defect just after having cooperated and raised one's social coefficient. Both of these measures are in place to prevent undermining the societal structure.</li>
+            <p>In addition, some examples are included next to get you started.</p>
+            <p><em>If you wish, you can make your strategies more complicated, including pulling your response automatically from an optimal Nash Equilibrium table, decided from your social coeffient. To find out more about this, see the advanced examples under the <strong><?php echo $further_reading_tab ?></strong> tab.</em></p>

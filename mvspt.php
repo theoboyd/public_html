@@ -3,7 +3,7 @@
    include('header.php');
    include('header-mvspt.php');
 ?>
-<section id="content" class="body">
+<section id="content" class="body largeprint">
    Launching on the 1st March!
    <br /><br />
    <a class="link" href="index.php">Go back</a>

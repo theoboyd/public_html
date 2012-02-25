@@ -58,7 +58,7 @@ table, td, tr, th {
 }
 
 blockquote{
-   text-align:justify;
+   text-align: justify;
 }
 
 header {
@@ -101,12 +101,19 @@ a.gold:hover {
    background: #ffff99;
 }
 
+.largeprint {
+   font-size: 133%;
+   line-height: 133%;
+}
+
 .smallprint {
    font-size: 60%;
+   line-height: 100%;
 }
 
 .vsmallprint {
    font-size: 40%;
+   line-height: 100%;
 }
 
 .legallink, .plainlink {
@@ -130,13 +137,19 @@ input[type=submit] {
    font-size: 90%;
    font-weight: bold;
    border: none;
-   height: 23px;
+   margin: 0px;
+   height: 28px;
+   cursor: pointer;
+}
+
+input[type=submit]:hover {
+   background: #ffff99;
 }
 
 input[type=file] {
    font-size: 90%;
    border: none;
-   height: 23px;
+   height: 28px;
 }
 
 .link {
@@ -216,7 +229,7 @@ img.barcode {
    -moz-border-radius: 4px;
    -webkit-border-radius: 4px;
    border-radius: 4px;
-   line-height: 15px!important;
+   line-height: 15px !important;
    text-align: center;
    text-decoration: none;
    float: right;
@@ -338,4 +351,13 @@ td, th {
 
 .mathcell {
    text-align: center;
+}
+
+.internal-nopad {
+   margin-left: 0px !important;
+}
+
+.patterned {
+   background-image: url('../images/folder.gif');
+   background-repeat: repeat;
 }

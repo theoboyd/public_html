@@ -3,7 +3,7 @@
    include('header.php');
    include('header-mvspt.php');
 ?>
-            <section id="content" class="body">
+            <section id="content" class="body largeprint">
             <!-- Section: Upload -->
                <h3>Strategy Upload Status</h3>
                <p>
@@ -11,6 +11,7 @@
                   if ((($_FILES["file"]["type"] == "text/plain")
                   || ($_FILES["file"]["type"] == "text/x-c")
                   || ($_FILES["file"]["type"] == "text/x-java-source")
+                  || ($_FILES["file"]["type"] == "text/x-python")
                   || ($_FILES["file"]["type"] == "application/pdf"))
                   && ($_FILES["file"]["size"] < 2097152))
                     {
@@ -39,7 +40,7 @@
                     }
                   else
                     {
-                    echo "Invalid filetype or size.<br />Please upload a plain text file, Java/C/C++ source file or a PDF that is less than 2MB in size.";
+                    echo "Invalid filetype or size.<br />Please upload a plain text file, Java/C/C++/Python source file or a PDF that is less than 2MB in size.";
                     }
                ?>
                <p><a class="link" href="mvspt.php">Back</a> to MVSPT site</p>
