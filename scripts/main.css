@@ -355,9 +355,5 @@ td, th {
 
 .internal-nopad {
    margin-left: 0px !important;
-}
-
-.patterned {
-   background-image: url('../images/folder.gif');
-   background-repeat: repeat;
+   margin-right: 0px !important;
 }

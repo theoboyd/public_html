@@ -1,6 +1,6 @@
 <?php
    $advpages = Array(
-                  Array('path' => 'mvspt-furtherreading.php', 'title' => 'Intro', 'shorttitle' => '1'),
+                  Array('path' => 'mvspt-furtherreading.php', 'title' => 'Summary', 'shorttitle' => '1'),
                   Array('path' => 'mvspt-game.php', 'title' => 'Prisoner\'s Dilemma Theory', 'shorttitle' => '2'),
                   Array('path' => 'mvspt-tournament.php', 'title' => 'Tournament Theory', 'shorttitle' => '3'),
                   Array('path' => 'mvspt-advancedexamples.php', 'title' => 'Advanced Examples', 'shorttitle' => '4'),
