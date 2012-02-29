@@ -5,10 +5,10 @@
    include('header-mvspt.php');
    // Constants
    $material_prize = '150';
-   $charity_total = '(tbd)';
+   $charity_total = ''; //' of &pound;(tbd) ';
    $charity_name = 'charity';
    $max_entries_pp = 5;
-   $department_list = 'Department of Computing';
+   $department_list = ''; //'; (c) in the Department of Computing at the University';
    $end_date = date('l jS \of F Y', mktime(0, 0, 0, 4, 1, 2012));
    $default_strategies_will = 'not be eligible';
    $further_reading_tab = 'More...';

@@ -39,7 +39,7 @@
                   <p>These are the terms and conditions of the competition and prizes ("Competition Terms"):</p>
                   <ol>
                      <li>To submit a strategy there are no restrictions on age, residence, etc.</li>
-                     <li>The above notwithstanding, to be eligible to receive a monetary prize you must be: (a) aged 18 or over at the time of submission; (b) a full-time student or member of staff of Imperial College London (The Imperial College of Science, Technology and Medicine, henceforth the "University"); (c) in the <?php echo $department_list ?> at the University.</li>
+                     <li>The above notwithstanding, to be eligible to receive a monetary prize you must be: (a) aged 18 or over at the time of submission; (b) a full-time student or member of staff of Imperial College London (The Imperial College of Science, Technology and Medicine, henceforth the "University")<?php echo $department_list ?></li>
                      <li>Participants agree to having their full name (but not any contact details) listed along with their scores online for viewing by other participants and interested parties. This is integral to the study.</li>
                      <li>Submissions will only be accepted via this webpage.</li>
                      <li>Submissions written in a language other than Java will be converted to Java to run in the framework. While every effort will be made to avoid translation errors, if any occur that prevent the strategy from otherwise having won, the organiser waives any responsibility for prize loss.</li>
