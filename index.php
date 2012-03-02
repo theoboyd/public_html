@@ -53,12 +53,12 @@ project <img class="icon" src="images/trophy.png" alt="" /></a>*</p>
          <!-- -->
          </div>
          <div id="sidebar">
-            <h3>Search this site</h3>
+            <!--h3>Search this site</h3>
             <form action="#">
                <span class="info">Query:</span> <input type="text" id="txt1" tabindex="0" onkeyup="showHint(this.value)" />&nbsp;
                <span id="txtLoad"></span>
             </form>
-            <p><span id="txtHint"></span></p>
+            <p><span id="txtHint"></span></p-->
          </div>
 <?php
    include('footer.php');
