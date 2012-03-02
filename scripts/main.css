@@ -208,6 +208,15 @@ img.barcode {
    margin: 0px 0px 0px 0px;
 }
 
+img.sponsor {
+   height: 100px;
+}
+
+img.advert {
+   width: 300px;
+   height: 155px;
+}
+
 .super {
    vertical-align: top;
 }

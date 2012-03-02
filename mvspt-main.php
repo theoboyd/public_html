@@ -4,9 +4,9 @@
    echo '<script type="text/javascript" src="scripts/ASCIIMathML.js"></script>';
    include('header-mvspt.php');
    // Constants
-   $material_prize = '150';
-   $charity_total = ''; //' of &pound;(tbd) ';
-   $charity_name = 'charity';
+   $material_prize = '200';
+   $charity_total = ' of &pound;200';
+   $charity_name = '<a href="https://www.barnardos.org.uk/donate/crisis.htm" class="info">Barnardo\'s</a>';
    $max_entries_pp = 5;
    $department_list = ''; //'; (c) in the Department of Computing at the University';
    $end_date = date('l jS \of F Y', mktime(0, 0, 0, 4, 1, 2012));
@@ -65,7 +65,7 @@
                   }
                ?>
                <br /><br /><br />
-               <p><span class="smallprint">&copy; 2011-2012 Theodore Boyd. Advanced strategy examples provided by Ali Ghoroghi. For a full list of references and a bibliography, please refer to the project interim report linked in Tournament Theory under the <?php echo $further_reading_tab ?> tab.</span></p>
+               <p><span class="smallprint">&copy; 2011-2012 Theodore Boyd. Advanced strategy examples provided by Ali Ghoroghi. For a full bibliography, please refer to the project interim report available in the Tournament Theory section under the <?php echo $further_reading_tab ?> tab.</span></p>
             </section>
 <?php
    include('footer-preblank.php');

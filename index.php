@@ -30,14 +30,14 @@
                <img src="images/email.png" style="vertical-align:middle;height:20px;" alt="" />
             <br />
             <!-- Section: Work -->
-               <h3>Work</h3>
+               <!--h3>Work</h3>
                <p><span class="info">2009</span> Go to our <a class="error" href="http://www.doc.ic.ac.uk/project/2008/163/g0816313">award winning<sup class="smallprint">&dagger;</sup> AI 
 project <img class="icon" src="images/trophy.png" alt="" /></a>*</p>
                <p><span class="info">2009</span> Access my <a class="link" href="https://wwwhomes.doc.ic.ac.uk/~tb208/files-s/">public files <img class="icon" src="images/lock.png" alt="" /></a></p>
                <p><span class="info">2009</span> Play with my <a class="link" href="java/index.html">Java implementation</a> of <a class="info" href="http://en.wikipedia.org/wiki/Conway's_Game_of_Life">Conway's Game of Life</a></p>
                <p><span class="info">2010</span> View my scripting and web <a class="link" href="https://wwwhomes.doc.ic.ac.uk/~tb208/experiments-s/">experiments site <img class="icon" src="images/lock.png" alt="" /></a></p>
                <p><span class="info">2010</span> Play our <a class="error" href="http://www.doc.ic.ac.uk/project/2009/271/g0927130/stable/tradinggame/trunk/web/">online trading game</a>*</p>
-               <p><span class="info">2011</span> You can find more interesting and work-in-progress items by <a class="link" href="javascript:$('#sidebar').css('background-color', '#bbffdd');">searching this site</a>.</p>
+               <p><span class="info">2011</span> You can find more interesting and work-in-progress items by <a class="link" href="javascript:$('#sidebar').css('background-color', '#bbffdd');">searching this site</a>.</p-->
             </section>
          </div>
          <div style="clear: both;">
@@ -46,8 +46,8 @@ project <img class="icon" src="images/trophy.png" alt="" /></a>*</p>
                   <img class="barcode outline" src="images/qrcode.png" alt="" /><span class="super">&Dagger;</span>
                   <br /><br />
                </p></div>
-               <p>&copy; 2008-2012 Theodore Boyd. &nbsp;* Now archived by the department &mdash; please contact me for the code.<sup>&dagger;</sup>Winner of the Deutsche Bank Prize for best project (Topics in AI: Knowledge Representation). 
-&nbsp;<sup>&Dagger;</sup><a href="javascript:toggle('qrcode')" style="color:#000000">QR matrix barcode for this website.</a> &nbsp;<img class="footer-icon" src="images/lock.png" alt="" />Some department users only. &nbsp;Valid HTML5 and CSS3 except custom border-radius.</p>
+               <p>&copy; 2008-2012 Theodore Boyd.<!--span id="fine-print"> &nbsp;*Now archived by the department &mdash; please contact me for the code.<sup>&dagger;</sup>Winner of the Deutsche Bank Prize for best project (Topics in AI: Knowledge Representation). 
+&nbsp;<sup>&Dagger;</sup><a href="javascript:toggle('qrcode')" style="color:#000000">QR matrix barcode for this website.</a> &nbsp;<img class="footer-icon" src="images/lock.png" alt="" />Some department users only. &nbsp;Valid HTML5 and CSS3 except custom border-radius.</span--></p>
             </footer>
          </div>
          <!-- -->
