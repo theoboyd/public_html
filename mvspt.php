@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
- //  header('Location: http://www.doc.ic.ac.uk/~tb208/mvspt-main.php');
+   header('Location: http://www.doc.ic.ac.uk/~tb208/mvspt-main.php');
    include('header.php');
    include('header-mvspt.php');
 ?>
