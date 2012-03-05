@@ -38,7 +38,7 @@
                   ?>
                </div-->
                <p>Note how they make use of a <code>NashEquilibrium</code> module to obtain the Nash equilibrium for the particular <code>lambda</code>. This and other useful methods can be found in the source code for the MVSPT package which is available for study below. You may make use of any code that a <code>Strategy</code> class would have access to. If you are writing in pseudocode, you can assume common mathematical functions and the <code>NashEquilibrium</code> module to obtain the Nash equilibrium for a particular <code>lambda</code> as above.</p>
-               <p><a class="gold" href="uploads/download.php?path=MVSPT-Src.zip">MVSPT Java framework source</a> (Zip archived Java code, .zip)</p>
+               <p><a class="link" href="https://github.com/theoboyd/mvspt">MVSPT Java framework source</a> (GitHub repository)</p>
                <p><a class="gold" href="uploads/download.php?path=Example-Pseudocode-02.txt">Advanced example pseudocode strategy</a> (plain text file, .txt)</p>
                <p><a class="gold" href="uploads/download.php?path=Example-Java-02.java">Advanced example Java strategy</a> (Java class, .java)</p>
             <br />

@@ -1,6 +1,6 @@
             <h3>Examples</h3>
                <p>To cater for as many people as possible, we will accept both strategies written out in English, formatted as <a class="plainlink" href="http://en.wikipedia.org/wiki/Pseudocode">pseudocode</a>, and also those written in code (Java, C, C++ and Python). If the strategy is being written in a programming language, it must extend the <code>Strategy</code> class:</p>
-               <p><a class="gold" href="uploads/download.php?path=Strategy.java">Strategy framework</a> (Java abstract class, .java)</p>
+               <p><a class="link" href="https://github.com/theoboyd/mvspt/blob/master/src/strategy/Strategy.java">Strategy framework</a> (Java abstract class on GitHub)</p>
                <p>Otherwise, for pseudocode, just keep to the style in the examples provided:</p>
                <div id="ex-tab1" class="buttonbar">
                   <div class="tabbar">
