@@ -34,7 +34,7 @@
                      <li>The winner of the material prize is the person that submitted the strategy which obtained the highest total score in the Prize-eligible Tournament. Total score means the value $\tau$ in the following formula: $\tau$ = $(1 - \gamma)$material_total + $\gamma$social_total, where the societal social coefficient, $\gamma$ is 0.5 for the Prize-eligible Tournament.</li>
                      <li>There is no personal winner of the social prize; the donation to charity will be managed by the tournament organisers and attributed proportionally to people whose strategies contributed socially.</li>
                      <li>The "Prize-eligible Tournament" is the tournament in which the winner will be able to receive a prize. "Friendly Tournaments" are played only for competition and for the opportunity to improve strategies before the Prize-eligible Tournament. The break between the two types of tournament depends on participation rates but will likely last a number of days and will be announced on this page.</li>
-                     <li>A number of "Default Strategies" will be seeded into the tournaments which will <?php echo $default_strategies_will ?> to win but will assist in making the strategy pool more active. These include, but are not limited to, "Tit-For-Tat" and its variants as above, "Always Cooperates", "Always Defects" and "Always Random".</li>
+                     <li>A number of "In-house Strategies" will be seeded into the tournaments which will not be eligible to win any prizes but will assist in making the strategy pool more active. These include, but are not limited to, "Tit-For-Tat" and its variants as above, "Always Cooperates", "Always Defects" and "Always Random".</li>
                   </ol>
                   <p>These are the terms and conditions of the competition and prizes ("Competition Terms"):</p>
                   <ol>
@@ -54,5 +54,5 @@
                      <li>Anybody can find out who won the competition by emailing the organiser.</li>
                      <li>The competition organiser is Theodore Boyd who is in the University's Department of Computing and can be contacted via the details on <a href="index.php" class="legallink">his homepage.</a></li>
                   </ol>
-                  <p>These rules may be subject to change without notice. If a change is made that significantly impacts those submissions already made, we will contact participants that have provided details for that purpose.</p>
+                  <p>These rules may be subject to change without notice. If a change is made that significantly impacts those submissions already made, we will contact participants that have provided details for that purpose. Last updated on <?php echo $tandc_update ?>.</p>
                   </div>

@@ -9,8 +9,8 @@
    $charity_name = '<a href="https://www.barnardos.org.uk/donate/crisis.htm" class="info">Barnardo\'s</a>';
    $max_entries_pp = 5;
    $department_list = ''; //'; (c) in the Department of Computing at the University';
-   $end_date = date('l jS \of F Y', mktime(0, 0, 0, 4, 1, 2012));
-   $default_strategies_will = 'not be eligible';
+   $end_date = date('l jS \of F Y', mktime(0, 0, 0, 4, 10, 2012));
+   $tsandcs_update = date('l jS \of F Y', mktime(0, 0, 0, 3, 13, 2012));
    $further_reading_tab = 'More...';
 
    // Code syntax highlighting
