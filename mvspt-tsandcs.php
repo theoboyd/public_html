@@ -54,5 +54,5 @@
                      <li>Anybody can find out who won the competition by emailing the organiser.</li>
                      <li>The competition organiser is Theodore Boyd who is in the University's Department of Computing and can be contacted via the details on <a href="index.php" class="legallink">his homepage.</a></li>
                   </ol>
-                  <p>These rules may be subject to change without notice. If a change is made that significantly impacts those submissions already made, we will contact participants that have provided details for that purpose. Last updated on <?php echo $tandc_update ?>.</p>
+                  <p>These rules may be subject to change without notice. If a change is made that significantly impacts those submissions already made, we will contact participants that have provided details for that purpose. Last updated on <?php echo $tsandcs_update ?>.</p>
                   </div>
