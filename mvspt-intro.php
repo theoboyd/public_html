@@ -1,7 +1,7 @@
             <h3>Welcome</h3>
-            <p>In exchange for some of your time to <strong>write a play strategy for a two-player game</strong>, you will help with a study on the social and material aspects of human competitive gameplay. Not only could you get the satisfaction of winning in a game of intelligence and strategy against your peers and people from around the world, eligible participants could also <strong>win &pound;<?php echo $material_prize ?> and be part of a donation<?php echo $charity_total ?> to <?php echo $charity_name ?></strong>!</p>
+            <p>In exchange for some of your time to <strong>write a play strategy for a two-player game</strong>, you will help with a study on the social and material aspects of human competitive gameplay. Not only could you get the satisfaction of winning in a game of intelligence and strategy against your peers and people from around the world, eligible participants could also <strong><?php echo ($external_mode ? '' : 'win &pound;' . $material_prize . ' and '); ?>be part of a donation<?php echo $charity_total ?> to <?php echo $charity_name ?></strong>!</p>
             <p>
-               <img class="outline advert" src="images/fifty.pounds.jpg" alt=""/>
+               <?php echo ($external_mode ? '' : '<img class="outline advert" src="images/fifty.pounds.jpg" alt=""/>'); ?>
                <a href="http://www.barnardos.org.uk"><img class="outline advert" src="images/barnardos.jpg" alt=""/></a>
             </p>
             <p>

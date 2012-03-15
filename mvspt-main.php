@@ -12,6 +12,7 @@
    $end_date = date('l jS \of F Y', mktime(0, 0, 0, 4, 10, 2012));
    $tsandcs_update = date('l jS \of F Y', mktime(0, 0, 0, 3, 13, 2012));
    $further_reading_tab = 'More...';
+   $external_mode = isset($_GET['ext']);
 
    // Code syntax highlighting
    include('scripts/geshi.php');
