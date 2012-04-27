@@ -12,6 +12,7 @@
                   || ($_FILES["file"]["type"] == "text/x-c")
                   || ($_FILES["file"]["type"] == "text/x-java-source")
                   || ($_FILES["file"]["type"] == "text/x-python")
+                  || ($_FILES["file"]["type"] == "application/octet-stream")
                   || ($_FILES["file"]["type"] == "application/pdf"))
                   && ($_FILES["file"]["size"] < 2097152))
                     {

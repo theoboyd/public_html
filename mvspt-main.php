@@ -9,8 +9,8 @@
    $charity_name = '<a href="https://www.barnardos.org.uk/donate/crisis.htm" class="info">Barnardo\'s</a>';
    $max_entries_pp = 5;
    $department_list = ''; //'; (c) in the Department of Computing at the University';
-   $end_date = date('l jS \of F Y', mktime(0, 0, 0, 5, 1, 2012));
-   $tsandcs_update = date('l jS \of F Y', mktime(0, 0, 0, 4, 4, 2012));
+   $end_date = date('l jS \of F Y', mktime(0, 0, 0, 5, 30, 2012));
+   $tsandcs_update = date('l jS \of F Y', mktime(0, 0, 0, 4, 27, 2012));
    $further_reading_tab = 'More...';
    $external_mode = isset($_GET['extnoprize']);
 
