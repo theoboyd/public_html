@@ -5,6 +5,7 @@
    include('header-mvspt.php');
 ?>
             <section id="content" class="body">
+              <h3>Top 10 Strategies</h3>
               <table class="sortable" id="results">
               <tr>
                 <th class="unsortable">Strategy</th>
@@ -36,46 +37,6 @@ Alex Gao
 </tr>
 <tr>
 <td>
-Positive People
-</td>
-<td>
-In-house (Ali Ghoroghi)
-</td>
-<td>
-0.843
-</td>
-<td>
-0.053
-</td>
-<td>
-0.799
-</td>
-<td>
-0.660
-</td>
-</tr>
-<tr>
-<td>
-Bayesian Tit For Tat
-</td>
-<td>
-Ingrid Funie
-</td>
-<td>
-0.435
-</td>
-<td>
-0.330
-</td>
-<td>
-0.448
-</td>
-<td>
-0.599
-</td>
-</tr>
-<tr>
-<td>
 Rafal Strategy
 </td>
 <td>
@@ -92,66 +53,6 @@ Rafal Szymanski
 </td>
 <td>
 0.937
-</td>
-</tr>
-<tr>
-<td>
-Always Random
-</td>
-<td>
-In-house (Theodore Boyd)
-</td>
-<td>
-0.374
-</td>
-<td>
-0.556
-</td>
-<td>
-0.187
-</td>
-<td>
-0.571
-</td>
-</tr>
-<tr>
-<td>
-Random Tit For Tat
-</td>
-<td>
-Aga Madurska
-</td>
-<td>
-0.574
-</td>
-<td>
-0.397
-</td>
-<td>
-0.285
-</td>
-<td>
-0.525
-</td>
-</tr>
-<tr>
-<td>
-Negative People
-</td>
-<td>
-In-house (Ali Ghoroghi)
-</td>
-<td>
-0.191
-</td>
-<td>
-0.734
-</td>
-<td>
-0.198
-</td>
-<td>
-0.715
 </td>
 </tr>
 <tr>
@@ -196,66 +97,6 @@ In-house (Georgios Sakellariou)
 </tr>
 <tr>
 <td>
-Nonsense People
-</td>
-<td>
-In-house (Ali Ghoroghi)
-</td>
-<td>
-0.565
-</td>
-<td>
-0.353
-</td>
-<td>
-0.438
-</td>
-<td>
-0.609
-</td>
-</tr>
-<tr>
-<td>
-Extended Tit For Tat
-</td>
-<td>
-In-house (Theodore Boyd)
-</td>
-<td>
-0.322
-</td>
-<td>
-0.237
-</td>
-<td>
-0.439
-</td>
-<td>
-0.522
-</td>
-</tr>
-<tr>
-<td>
-Tit For Tat
-</td>
-<td>
-In-house (Theodore Boyd)
-</td>
-<td>
-0.000
-</td>
-<td>
-0.928
-</td>
-<td>
-0.000
-</td>
-<td>
-0.710
-</td>
-</tr>
-<tr>
-<td>
 Always Cooperates
 </td>
 <td>
@@ -292,26 +133,6 @@ Xiuyi Fan
 </td>
 <td>
 0.841
-</td>
-</tr>
-<tr>
-<td>
-A Bit Nicer
-</td>
-<td>
-Xiuyi Fan
-</td>
-<td>
-0.470
-</td>
-<td>
-0.255
-</td>
-<td>
-0.529
-</td>
-<td>
-0.604
 </td>
 </tr>
 <tr>
@@ -356,46 +177,6 @@ Xiuyi Fan
 </tr>
 <tr>
 <td>
-Nash Tit For Tat
-</td>
-<td>
-In-house (Ali Ghoroghi)
-</td>
-<td>
-0.470
-</td>
-<td>
-0.273
-</td>
-<td>
-0.428
-</td>
-<td>
-0.540
-</td>
-</tr>
-<tr>
-<td>
-Eighty Percent Nice
-</td>
-<td>
-Xiuyi Fan
-</td>
-<td>
-0.800
-</td>
-<td>
-0.122
-</td>
-<td>
-0.800
-</td>
-<td>
-0.713
-</td>
-</tr>
-<tr>
-<td>
 Nash Defect
 </td>
 <td>
@@ -432,46 +213,6 @@ Alex Gao
 </td>
 <td>
 0.987
-</td>
-</tr>
-<tr>
-<td>
-Social Tit For Tat
-</td>
-<td>
-In-house (Theodore Boyd)
-</td>
-<td>
-0.530
-</td>
-<td>
-0.224
-</td>
-<td>
-0.550
-</td>
-<td>
-0.597
-</td>
-</tr>
-<tr>
-<td>
-Bayesian
-</td>
-<td>
-In-house (Ali Ghoroghi)
-</td>
-<td>
-0.383
-</td>
-<td>
-0.395
-</td>
-<td>
-0.448
-</td>
-<td>
-0.649
 </td>
 </tr>
               </table>
