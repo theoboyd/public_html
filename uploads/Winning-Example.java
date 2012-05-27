@@ -17,7 +17,7 @@ import util.GameSettings;
 import util.Lambda;
 import util.Response;
 
-public class RLQTableII extends Strategy {
+public class RLQTableI extends Strategy {
 
   private static double[][] Qtable = new double[105][2];
   private int LastState;
@@ -29,7 +29,7 @@ public class RLQTableII extends Strategy {
   private static double LastLambda;
   private static double CoopRatio = 0.3;
 
-  public RLQTableII() {
+  public RLQTableI() {
     super();
     lambda = new Lambda(CoopRatio);
     initialQ();
@@ -139,7 +139,7 @@ public class RLQTableII extends Strategy {
 
   @Override
   public String name() {
-    return "RL QTable II";
+    return "RL QTable I";
   }
 
   @Override

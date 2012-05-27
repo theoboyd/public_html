@@ -23,24 +23,13 @@
               </tr>
 <tr>
 <td>
-RL QTable II
-</td>
-<td>
-Alex Gao
-</td>
-<td>
-46.2%
-</td>
-</tr>
-<tr>
-<td>
 RL QTable I
 </td>
 <td>
 Alex Gao
 </td>
 <td>
-45.1%
+79.91%
 </td>
 </tr>
 <tr>
@@ -51,7 +40,7 @@ AE-GS-S
 In-house (Georgios Sakellariou)
 </td>
 <td>
-4.30%
+8.92%
 </td>
 </tr>
 <tr>
@@ -62,7 +51,7 @@ Rafal Strategy
 Rafal Szymanski
 </td>
 <td>
-2.00%
+4.78%
 </td>
 </tr>
 <tr>
@@ -73,7 +62,7 @@ AE-GS
 In-house (Georgios Sakellariou)
 </td>
 <td>
-1.60%
+3.97%
 </td>
 </tr>
 <tr>
@@ -84,11 +73,9 @@ Double Increment
 Xiuyi Fan
 </td>
 <td>
-0.70%
+2.41%
 </td>
 </tr>
-
-
 <tr>
 <td>
 A Bit Random
@@ -133,42 +120,33 @@ Xin Yan
 0.00%
 </td>
 </tr>
+<tr>
+<td>
+Tit For Tat
+</td>
+<td>
+In-house (Theodore Boyd)
+</td>
+<td>
+0.00%
+</td>
+</tr>
               </table>
               <br />
-              <span class="smallprint">Results averaged over 500,000 round-robin tournament simulations.</span>
+              <span class="smallprint">Results from 10,000 round-robin tournament simulations. Winner confirmed using a further 500,000 simulations.</span><br />
+              <span class="smallprint">Where is "RL QTable II"? Considered identical to "RL QTable I", it was disqualified.</span>
               <br /><br />
-
 
               <h3>Top 10 Strategies - Typical Single Run Scores</h3>
               <table class="sortable" id="single-run-results">
               <tr>
                 <th class="unsortable">Strategy</th>
                 <th class="unsortable">Author</th>
-                <th>Morality*</th>
+                <th>Morality&ddagger;</th>
                 <th>Material</th>
                 <th>Social</th>
                 <th>Overall</th>
               </tr>
-<tr>
-<td>
-RL QTable II
-</td>
-<td>
-Alex Gao
-</td>
-<td>
-0.496
-</td>
-<td>
-0.857
-</td>
-<td>
-0.445
-</td>
-<td>
-1.000
-</td>
-</tr>
 <tr>
 <td>
 Rafal Strategy
@@ -177,16 +155,16 @@ Rafal Strategy
 Rafal Szymanski
 </td>
 <td>
-0.696
+0.773
 </td>
 <td>
-0.536
+0.438
 </td>
 <td>
-0.680
+0.754
 </td>
 <td>
-0.937
+0.903
 </td>
 </tr>
 <tr>
@@ -197,16 +175,16 @@ AE-GS-S
 In-house (Georgios Sakellariou)
 </td>
 <td>
-0.748
+0.791
 </td>
 <td>
-0.467
+0.392
 </td>
 <td>
-0.723
+0.771
 </td>
 <td>
-0.917
+0.882
 </td>
 </tr>
 <tr>
@@ -217,16 +195,56 @@ AE-GS
 In-house (Georgios Sakellariou)
 </td>
 <td>
-0.870
+0.818
 </td>
 <td>
-0.291
+0.401
 </td>
 <td>
-0.842
+0.795
 </td>
 <td>
-0.875
+0.907
+</td>
+</tr>
+<tr>
+<td>
+Nonsense People
+</td>
+<td>
+In-house (Ali Ghoroghi)
+</td>
+<td>
+0.445
+</td>
+<td>
+0.462
+</td>
+<td>
+0.346
+</td>
+<td>
+0.606
+</td>
+</tr>
+<tr>
+<td>
+Tit For Tat
+</td>
+<td>
+In-house (Theodore Boyd)
+</td>
+<td>
+0.000
+</td>
+<td>
+0.948
+</td>
+<td>
+0.000
+</td>
+<td>
+0.697
 </td>
 </tr>
 <tr>
@@ -246,7 +264,7 @@ In-house (Theodore Boyd)
 1.000
 </td>
 <td>
-0.774
+0.770
 </td>
 </tr>
 <tr>
@@ -257,16 +275,16 @@ A Bit Random
 Xiuyi Fan
 </td>
 <td>
-0.704
+0.700
 </td>
 <td>
-0.582
+0.541
 </td>
 <td>
-0.511
+0.533
 </td>
 <td>
-0.841
+0.808
 </td>
 </tr>
 <tr>
@@ -286,7 +304,7 @@ In-house (Theodore Boyd)
 0.000
 </td>
 <td>
-0.765
+0.735
 </td>
 </tr>
 <tr>
@@ -297,36 +315,36 @@ Double Increment
 Xiuyi Fan
 </td>
 <td>
-0.887
+0.836
 </td>
 <td>
-0.217
+0.340
 </td>
 <td>
-0.875
+0.819
 </td>
 <td>
-0.843
+0.881
 </td>
 </tr>
 <tr>
 <td>
-Nash Defect
+Eighty Percent Nice
 </td>
 <td>
-Xin Yan
+Xiuyi Fan
 </td>
 <td>
-0.000
+0.800
 </td>
 <td>
-0.940
+0.136
 </td>
 <td>
-0.000
+0.800
 </td>
 <td>
-0.719
+0.716
 </td>
 </tr>
 <tr>
@@ -337,21 +355,21 @@ RL QTable I
 Alex Gao
 </td>
 <td>
-0.478
+0.409
 </td>
 <td>
-0.836
+0.923
 </td>
 <td>
-0.449
+0.417
 </td>
 <td>
-0.987
+1.000
 </td>
 </tr>
               </table>
               <br />
-              <span class="smallprint">*Average social coefficient, higher is more "moral". Scores have been scaled.</span>
+              <span class="smallprint">&ddagger;Average social coefficient, higher is more "moral". Scores have been scaled.</span>
               <br /><br />
               <h3>Winning Strategy Code</h3>
               <?php
