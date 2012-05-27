@@ -28,5 +28,8 @@ function resizeIframe() {
     document.getElementById('iframe').style.height = height + 'px';
     resizeDebug();
 }
-document.getElementById('iframe').onload=resizeIframe;
+iframe = document.getElementById('iframe');
+if (iframe) {
+  iframe.onload=resizeIframe;
+}
 window.onresize = resizeIframe;
